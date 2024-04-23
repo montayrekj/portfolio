@@ -8,7 +8,7 @@ import portrait from "../assets/king-portrait-outline.png";
 
 export default function AboutMe() {
   return (
-    <>
+    <div id="about" className="scroll-mt-24">
       <h3 className="font-semibold text-4xl">{"Problem solver <coder>"}</h3>
       <span>Frontend Developer with 5 years of experience</span>
       <div className="max-w-screen-xl w-full border-b-2 dark:border-gray-700 border-gray-300">
@@ -33,6 +33,6 @@ export default function AboutMe() {
           <img src={portrait} className="h-[450px]" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
