@@ -70,7 +70,7 @@ export default function Header({ isDarkMode, toggleDarkMode }: HeaderProps) {
             url="#contact"
             onClick={() => setMenuOpen(false)}
           />
-          <div className="border border-black dark:border-white rounded-full p-[6px] flex items-center">
+          <div className="border border-black dark:border-white rounded-full py-[8px] px-[6px] flex items-center">
             <DarkModeSwitch
               checked={isDarkMode}
               onChange={toggleDarkMode}

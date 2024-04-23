@@ -25,6 +25,7 @@ export default function Layout() {
     } else {
       const root = document.getElementsByTagName("html")[0];
       root.setAttribute("class", darkMode);
+      root.style.backgroundColor = darkMode === "dark" ? "#000" : "#FFF";
     }
   }, [darkMode]);
 

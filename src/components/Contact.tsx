@@ -11,7 +11,17 @@ export default function Contact() {
   return (
     <div className="max-w-screen-sm text-center mx-auto mt-14" id="contact">
       <h2 className="text-4xl font-semibold">Let's work together</h2>
-      <span>Open to full time, remote jobs or freelance projects</span>
+      <p>Open to full time, remote jobs or freelance projects</p>
+      <p className="text-sm text-gray-500">
+        Email me at{" "}
+        <a
+          className="text-gray-400 font-semibold"
+          href="mailto:contact@montayrekj.dev"
+        >
+          contact@montayrekj.dev
+        </a>{" "}
+        or send a message below.
+      </p>
       <div className="flex flex-col py-12 gap-4 max-w-[450px] mx-auto">
         <TextInput
           name="name"
