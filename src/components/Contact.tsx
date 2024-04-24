@@ -8,6 +8,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [formSent, setFormSent] = useState(false);
 
   return (
     <div className="max-w-screen-sm text-center mx-auto mt-14" id="contact">
@@ -24,7 +25,7 @@ export default function Contact() {
         or send a message below.
       </p>
       <div className="flex flex-col py-12 gap-4 max-w-[450px] mx-auto">
-        <div className="flex justify-between [&_input]:flex-1 gap-4">
+        <div className="flex justify-between [&_input]:w-full gap-4">
           <TextInput
             name="name"
             placeholder="Full name"
@@ -51,12 +52,16 @@ export default function Contact() {
           setValue={setMessage}
           rows={6}
         />
-        <Button
-          label="Send message"
-          variant="secondary"
-          onClick={() => {}}
-          className="w-40 text-sm"
-        />
+        {!formSent && (
+          <Button
+            label="Send message"
+            variant="secondary"
+            onClick={() => {
+              setFormSent(false);
+            }}
+            className="w-40 text-sm"
+          />
+        )}
       </div>
     </div>
   );
