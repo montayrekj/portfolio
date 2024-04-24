@@ -17,7 +17,7 @@ export default function Textarea({
   return (
     <textarea
       {...props}
-      className="dark:bg-black bg-white border border-gray-600 px-4 py-1 rounded-xl"
+      className="dark:bg-black bg-white border border-gray-600 px-4 py-1 rounded-xl placeholder:text-sm placeholder:text-gray-500"
       name={name}
       placeholder={placeholder}
       value={value}

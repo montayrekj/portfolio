@@ -6,6 +6,7 @@ type ButtonProps = {
   onClick?: () => void;
   variant?: "primary" | "secondary" | "tertiary";
   className?: string;
+  externalLink?: boolean;
 };
 
 const variantClasses = {
@@ -22,6 +23,7 @@ export default function Button({
   onClick,
   variant = "primary",
   className,
+  externalLink = false,
 }: ButtonProps) {
   return url ? (
     <a
@@ -31,6 +33,7 @@ export default function Button({
         className
       )}
       href={url}
+      target={externalLink ? "_blank" : ""}
       onClick={onClick}
     >
       {label}

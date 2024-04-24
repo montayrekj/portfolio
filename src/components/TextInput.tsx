@@ -19,7 +19,7 @@ export default function TextInput({
   return (
     <input
       {...props}
-      className="dark:bg-black bg-white border border-gray-600 px-4 py-1 rounded-2xl"
+      className="dark:bg-black bg-white border border-gray-600 px-4 py-1 rounded-lg placeholder:text-sm placeholder:text-gray-500"
       type={type}
       name={name}
       placeholder={placeholder}
