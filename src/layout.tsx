@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/Header";
 import { useEffect, useState } from "react";
 import Home from "./Home";
+import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
   {
@@ -30,12 +31,13 @@ export default function Layout() {
   }, [darkMode]);
 
   return (
-    <>
+    <div className="text-black dark:text-gray-200 bg-white dark:bg-black">
       <Header
         isDarkMode={darkMode === "dark"}
         toggleDarkMode={toggleDarkMode}
       />
       <RouterProvider router={router} />
-    </>
+      <Footer />
+    </div>
   );
 }
