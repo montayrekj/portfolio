@@ -1,12 +1,14 @@
 import classNames from "classnames";
+import { ReactNode } from "react";
 
 type ButtonProps = {
-  label: string;
+  label: string | ReactNode;
   url?: string;
   onClick?: () => void;
   variant?: "primary" | "secondary" | "tertiary";
   className?: string;
   externalLink?: boolean;
+  type?: "submit" | "reset" | "button" | undefined;
 };
 
 const variantClasses = {
@@ -24,6 +26,7 @@ export default function Button({
   variant = "primary",
   className,
   externalLink = false,
+  type,
 }: ButtonProps) {
   return url ? (
     <a
@@ -46,6 +49,7 @@ export default function Button({
         className
       )}
       onClick={onClick}
+      type={type}
     >
       {label}
     </button>

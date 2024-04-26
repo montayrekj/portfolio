@@ -34,7 +34,7 @@ const languages = [
     name: "TailwindCSS",
     description: "A utility-first widely used frontend CSS framework.",
     icon: tailwind,
-    iconClass: "h-6 w-10",
+    iconClass: "h-6 w-12",
   },
   {
     name: "NodeJS",
