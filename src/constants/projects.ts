@@ -1,6 +1,9 @@
 import ReactMUI from "../assets/react-mui.png";
 import SampleEcommerce from "../assets/sample-ecommerce.png";
 import WeddingInvitation from "../assets/wedding-invitation.png";
+import Clock from "../assets/clock.png";
+import Toggle from "../assets/toggle.png";
+import ChatApp from "../assets/react-chat-app.png";
 
 export const PROJECTS = [
   {
@@ -28,5 +31,31 @@ export const PROJECTS = [
     image: WeddingInvitation,
     tags: ["Canva"],
     projectLink: "https://king-and-tala-wedding-invitation.online/",
+  },
+  {
+    title: "Dark Mode Toggle",
+    description:
+      "This project is a toggle element for dark/light mode using just CSS and Javascript for styling and animation. Preview and code is on Codepen.",
+    image: Toggle,
+    imgClass: "w-full",
+    tags: ["Javascript", "CSS"],
+    projectLink: "https://codepen.io/montayrekj/pen/VwYGjdb",
+  },
+  {
+    title: "Aesthetic Clock",
+    description:
+      "This project is an aesthetic clock with the React logo as inspiration and is created using CSS and Javascript. Preview and code is on Codepen.",
+    image: Clock,
+    tags: ["Javascript", "CSS"],
+    projectLink: "https://codepen.io/montayrekj/pen/NWPYNgE",
+  },
+  {
+    title: "Let's Chat!",
+    description:
+      "This project is a messaging app powered using Firebase/Firestore. You can message on the main/general channel as well as create your own channels to chat with your friends. ",
+    image: ChatApp,
+    tags: ["React", "Vite", "Firebase", "Firestore"],
+    projectLink: "https://react-chat-app-beta-bice.vercel.app/",
+    githubLink: "https://github.com/montayrekj/react-chat-app",
   },
 ];

@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import code from "../assets/code.svg";
 import Button from "./Button";
 
@@ -9,10 +10,12 @@ type ProjectItem = {
   projectLink: string;
   githubLink?: string;
   repoLabel?: string;
+  imgClass?: string;
 };
 
 export default function ProjectItem({
   image,
+  imgClass,
   tags,
   title,
   description,
@@ -24,7 +27,10 @@ export default function ProjectItem({
     <div className="grid grid-rows-[200px_1fr_30px] rounded-xl">
       <div className="flex items-center justify-center rounded-xl bg-[#DDDDDD] dark:bg-[#DDDDDD20] h-[200px] overflow-hidden shadow-[2px_2px_3px_#eee] dark:shadow-[2px_2px_2px_#222]">
         {image ? (
-          <img src={image} className="object-cover h-full" />
+          <img
+            src={image}
+            className={classNames(imgClass, "object-cover h-full")}
+          />
         ) : (
           <img src={code} className="h-[150px]" />
         )}
