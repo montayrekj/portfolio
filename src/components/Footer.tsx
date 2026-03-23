@@ -1,11 +1,11 @@
-import LinkedIn from "../assets/linkedin.png";
-import Github from "../assets/github.webp";
+import LinkedIn from '../assets/linkedin.png';
+import Github from '../assets/github.webp';
 
 export default function Footer() {
   return (
     <div className="w-full text-sm dark:!bg-[#111111] !bg-[#EEEEEE60] text-center py-2 flex items-center justify-center flex-col gap-2">
       <div>
-        Copyright © 2024, King Joshua Montayre. Built with{" "}
+        Copyright © 2026, King Joshua Montayre. Built with{' '}
         <a
           className="border-b border-black dark:border-white pb-[1px] text-sm"
           href="https://vitejs.dev/"
@@ -13,7 +13,7 @@ export default function Footer() {
         >
           Vite
         </a>
-        . Source on{" "}
+        . Source on{' '}
         <a
           className="border-b border-black dark:border-white pb-[1px] text-sm"
           href="https://github.com/montayrekj/portfolio"

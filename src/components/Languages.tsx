@@ -1,5 +1,6 @@
 import javascript from "../assets/languages/javascript.png";
 import react from "../assets/languages/react.png";
+import reactnative from "../assets/languages/react.png";
 import nextjs from "../assets/languages/nextjs.png";
 import git from "../assets/languages/git.png";
 import tailwind from "../assets/languages/tailwind.png";
@@ -18,6 +19,12 @@ const languages = [
     name: "React",
     description: "Building fast and efficient React App's and websites.",
     icon: react,
+    iconClass: "w-9",
+  },
+  {
+    name: "React Native",
+    description: "Building cross-platform mobile apps for iOS and Android.",
+    icon: reactnative,
     iconClass: "w-9",
   },
   {
@@ -57,7 +64,7 @@ const languages = [
 
 export default function Languages() {
   return (
-    <div className="grid grid-cols-2 gap-8 md:grid-cols-4 text-left py-10 md:px-12">
+    <div className="grid grid-cols-3 gap-8 text-left py-10 md:px-12">
       {languages.map((language) => (
         <div className="flex flex-col gap-2">
           <img
