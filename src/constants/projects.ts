@@ -5,16 +5,54 @@ import Toggle from '../assets/toggle.png';
 import ChatApp from '../assets/react-chat-app.png';
 import CTherapies from '../assets/ctherapies.png';
 import TaraTakbo from '../assets/tara-takbo.png';
+import DinkUp from '../assets/dink-up.png';
+import TopFrame from '../assets/top-frame.png';
 
 export const PROJECTS = [
   {
-    title: 'React MUI',
+    title: 'TopFrame',
     description:
-      'This web application is just a simple sample project using Next.js to showcase implementation skills on React/Next.js as well as the use of Material UI as UI Library.',
-    image: ReactMUI,
-    tags: ['React', 'Next.js', 'MaterialUI'],
-    projectLink: 'https://react-mui-five.vercel.app/',
-    githubLink: 'https://github.com/montayrekj/react-mui',
+      'An AI-powered Instagram post curator. Upload 20+ photos, describe your vibe, and let AI pick the best shots and generate caption and song suggestions — powered by Claude and Ollama.',
+    image: TopFrame,
+    tags: ['Next.js', 'TailwindCSS', 'Claude AI', 'Ollama'],
+    projectLink: 'https://top-frame.vercel.app/',
+    githubLink: 'https://github.com/montayrekj/top-frame',
+  },
+  {
+    title: 'Dink Up',
+    description:
+      'A mobile-first PWA for scoring pickleball games. Supports singles and doubles with proper server rotation tracking, rally and side-out scoring modes, configurable win scores, per-team undo, and full offline capability via service workers.',
+    image: DinkUp,
+    tags: ['Next.js', 'TailwindCSS', 'Zustand', 'PWA'],
+    projectLink: 'https://dink-up.vercel.app/',
+    githubLink: 'https://github.com/montayrekj/dink-up',
+  },
+  {
+    title: 'TaraTakbo',
+    description:
+      'This project is a website to easily map your running routes using Google Maps API and Mapbox GL JS and Turf.js. It also allows you to add your running routes to a map, visualize the route turn by turn and then share them with your friends.',
+    image: TaraTakbo,
+    tags: ['React', 'Next.js', 'TailwindCSS'],
+    projectLink: 'http://tara-takbo.vercel.app/',
+    githubLink: 'https://github.com/montayrekj/tara-takbo',
+  },
+  {
+    title: 'CTherapies',
+    description:
+      'This project is a website for a company that provides therapy services. It is a simple website with a home page, about page, services page, and contact page.',
+    image: CTherapies,
+    tags: ['React', 'Next.js', 'TailwindCSS'],
+    projectLink: 'http://ctherapies.vercel.app/',
+    githubLink: 'https://github.com/montayrekj/ctherapies',
+  },
+  {
+    title: "Let's Chat!",
+    description:
+      'This project is a messaging app powered using Firebase/Firestore. You can message on the main/general channel as well as create your own channels to chat with your friends. ',
+    image: ChatApp,
+    tags: ['React', 'Vite', 'Firebase', 'Firestore'],
+    projectLink: 'https://react-chat-app-beta-bice.vercel.app/',
+    githubLink: 'https://github.com/montayrekj/react-chat-app',
   },
   {
     title: 'Sample Ecommerce',
@@ -24,6 +62,15 @@ export const PROJECTS = [
     tags: ['React', 'Next.js', 'TailwindCSS'],
     projectLink: 'https://sample-ecommerce-chi.vercel.app/',
     githubLink: 'https://github.com/montayrekj/sample_ecommerce',
+  },
+  {
+    title: 'React MUI',
+    description:
+      'This web application is just a simple sample project using Next.js to showcase implementation skills on React/Next.js as well as the use of Material UI as UI Library.',
+    image: ReactMUI,
+    tags: ['React', 'Next.js', 'MaterialUI'],
+    projectLink: 'https://react-mui-five.vercel.app/',
+    githubLink: 'https://github.com/montayrekj/react-mui',
   },
   {
     title: 'Dark Mode Toggle',
@@ -41,32 +88,5 @@ export const PROJECTS = [
     image: Clock,
     tags: ['Javascript', 'CSS'],
     projectLink: 'https://codepen.io/montayrekj/pen/NWPYNgE',
-  },
-  {
-    title: "Let's Chat!",
-    description:
-      'This project is a messaging app powered using Firebase/Firestore. You can message on the main/general channel as well as create your own channels to chat with your friends. ',
-    image: ChatApp,
-    tags: ['React', 'Vite', 'Firebase', 'Firestore'],
-    projectLink: 'https://react-chat-app-beta-bice.vercel.app/',
-    githubLink: 'https://github.com/montayrekj/react-chat-app',
-  },
-  {
-    title: 'CTherapies',
-    description:
-      'This project is a website for a company that provides therapy services. It is a simple website with a home page, about page, services page, and contact page.',
-    image: CTherapies,
-    tags: ['React', 'Next.js', 'TailwindCSS'],
-    projectLink: 'http://ctherapies.vercel.app/',
-    githubLink: 'https://github.com/montayrekj/ctherapies',
-  },
-  {
-    title: 'TaraTakbo',
-    description:
-      'This project is a website to easily map your running routes using Google Maps API and Mapbox GL JS and Turf.js. It also allows you to add your running routes to a map, visualize the route turn by turn and then share them with your friends.',
-    image: TaraTakbo,
-    tags: ['React', 'Next.js', 'TailwindCSS'],
-    projectLink: 'http://tara-takbo.vercel.app/',
-    githubLink: 'https://github.com/montayrekj/tara-takbo',
   },
 ];

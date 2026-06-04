@@ -1,64 +1,84 @@
-import javascript from "../assets/languages/javascript.png";
-import react from "../assets/languages/react.png";
-import reactnative from "../assets/languages/react.png";
-import nextjs from "../assets/languages/nextjs.png";
-import git from "../assets/languages/git.png";
-import tailwind from "../assets/languages/tailwind.png";
-import nodejs from "../assets/languages/nodejs.png";
-import sql from "../assets/languages/sql.png";
-import graphql from "../assets/languages/graphql.png";
-import classNames from "classnames";
+import javascript from '../assets/languages/javascript.png';
+import typescript from '../assets/languages/typescript.png';
+import react from '../assets/languages/react.png';
+import reactnative from '../assets/languages/react.png';
+import nextjs from '../assets/languages/nextjs.png';
+import git from '../assets/languages/git.png';
+import tailwind from '../assets/languages/tailwind.png';
+import nodejs from '../assets/languages/nodejs.png';
+import prisma from '../assets/languages/prisma.png';
+import postgresql from '../assets/languages/postgresql.png';
+import graphql from '../assets/languages/graphql.png';
+import vite from '../assets/languages/vite.png';
+import classNames from 'classnames';
 
 const languages = [
   {
-    name: "Javascript",
-    description: "Strong JS knowledge and advanced web development.",
+    name: 'Javascript',
+    description: 'Strong JS knowledge and advanced web development.',
     icon: javascript,
   },
   {
-    name: "React",
+    name: 'TypeScript',
+    description: 'Writing safer, more maintainable code with static typing.',
+    icon: typescript,
+  },
+  {
+    name: 'React',
     description: "Building fast and efficient React App's and websites.",
     icon: react,
-    iconClass: "w-9",
+    iconClass: 'w-9',
   },
   {
-    name: "React Native",
-    description: "Building cross-platform mobile apps for iOS and Android.",
+    name: 'React Native',
+    description: 'Building cross-platform mobile apps for iOS and Android.',
     icon: reactnative,
-    iconClass: "w-9",
+    iconClass: 'w-9',
   },
   {
-    name: "Next.js",
-    description: "Fast server-side rendering, dynamic routing & less code.",
+    name: 'Next.js',
+    description: 'Fast server-side rendering, dynamic routing & less code.',
     icon: nextjs,
   },
   {
-    name: "Git",
-    description: "DevOps for streamlined source code management.",
+    name: 'Git',
+    description: 'DevOps for streamlined source code management.',
     icon: git,
   },
   {
-    name: "TailwindCSS",
-    description: "A utility-first widely used frontend CSS framework.",
+    name: 'TailwindCSS',
+    description: 'A utility-first widely used frontend CSS framework.',
     icon: tailwind,
-    iconClass: "h-6 w-12",
+    iconClass: 'h-6 w-10',
   },
   {
-    name: "NodeJS",
+    name: 'NodeJS',
     description:
-      "Using NodeJS with Express.js to build RESTful APIs for the frontend to consume data.",
+      'Using NodeJS with Express.js to build RESTful APIs for the frontend to consume data.',
     icon: nodejs,
   },
   {
-    name: "SQL",
-    description: "Using SQL for scalable databases for the backend",
-    icon: sql,
+    name: 'Prisma',
+    description:
+      'Type-safe ORM for Node.js — streamlines database access and migrations with PostgreSQL.',
+    icon: prisma,
   },
   {
-    name: "GraphQL",
+    name: 'PostgreSQL',
+    description: 'Managing relational databases with PostgreSQL for scalable backend data storage.',
+    icon: postgresql,
+  },
+  {
+    name: 'GraphQL',
     description:
-      "A fast performant way to developer, manipulate and query APIs or data.",
+      'A fast performant way to developer, manipulate and query APIs or data.',
     icon: graphql,
+  },
+  {
+    name: 'Vite',
+    description:
+      'Lightning-fast build tooling and dev server for modern frontend projects.',
+    icon: vite,
   },
 ];
 
@@ -69,10 +89,7 @@ export default function Languages() {
         <div className="flex flex-col gap-2">
           <img
             src={language.icon}
-            className={classNames(
-              "h-8 w-8 ml-3 mb-3",
-              language.iconClass ?? ""
-            )}
+            className={classNames('ml-3 mb-3', language.iconClass ?? 'h-8 w-8')}
           />
           <h4 className="border-l-2 pl-2 dark:border-gray-700 border-gray-300 font-semibold ">
             {language.name}
