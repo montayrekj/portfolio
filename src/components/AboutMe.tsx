@@ -1,16 +1,16 @@
 import {
   faPeopleGroup,
   faUserGraduate,
-} from "@fortawesome/free-solid-svg-icons";
-import AboutMeItems from "../components/AboutMeItems";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-import portrait from "../assets/king-portrait-outline.png";
+} from '@fortawesome/free-solid-svg-icons';
+import AboutMeItems from '../components/AboutMeItems';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import portrait from '../assets/king-portrait-outline.png';
 
 export default function AboutMe() {
   return (
     <div id="about" className="scroll-mt-24">
-      <h3 className="font-semibold text-4xl">{"Problem solver <coder>"}</h3>
-      <span>Frontend Developer with 5 years of experience</span>
+      <h3 className="font-semibold text-4xl">{'Problem solver <coder>'}</h3>
+      <span>Frontend Developer with 7+ years of experience</span>
       <div className="max-w-screen-xl w-full border-b-2 dark:border-gray-700 border-gray-300">
         <div className="flex justify-center items-center max-md:flex-col max-md:gap-8 mt-8">
           <div className="max-w-[400px] mt-8 flex flex-col gap-8 justify-center px-4">
