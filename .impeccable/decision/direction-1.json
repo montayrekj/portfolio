@@ -1,0 +1,135 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned Construction Set. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Construction Set",
+      "kicker": "THE ROLL",
+      "lineage": "Architectural construction documents: title blocks, building sections, schedules, detail sheets",
+      "thesis": "Your career issued as a drawing set: the stack is a building section and every shipped product is a room in it.",
+      "palette": ["#f3f4f1", "#16181c", "#2347b8", "#d9a33a", "#5f8f6a", "#d8342b"],
+      "materials": [
+        "Plotted bond sheet in light theme, cyanotype blueprint in dark: one drawing, two reproduction processes",
+        "Flat poché fills from Le Corbusier's architectural polychromy, material hatch patterns, leader-line callouts"
+      ],
+      "viewport": "A full-width section drawing of your stack: Interface, Mobile, Services, and Data floors, with rooms tagged by real products (GoRuck, the clinical-study app, hivetracks, Expertise journeys). Your name sits in the title block, with an 'Issued for hire' stamp and the contact action beside it.",
+      "risk": "Slides into blueprint cliché if it goes blue-and-white. It has to stay a plotted, colored set that uses real drawing conventions.",
+      "raised": [
+        { "from": "challenger-fluid-ink", "raise": "Recency as line weight: current work is drawn as heavy new construction and older roles step down to lighter existing lines, so the sheet reads newest-darkest at a glance." },
+        { "from": "challenger-orienteering", "raise": "One reserved ink: redline marks only what is live (the current role, the availability stamp, the selected floor, focus). Nothing decorative is ever red." },
+        { "from": "challenger-collider", "raise": "Isolate and dim: selecting a floor, role, or project isolates its linework and drops the rest of the sheet to gray underlay." },
+        { "from": "challenger-papercut", "raise": "Depth by flat overlap only: poché fields and stacked sheets layer as flat color. No shadows, glows, gradients, or glass anywhere." },
+        { "from": "challenger-rubber-hose", "raise": "One drafting tempo: every draw-on and reveal runs on a single shared beat, so the motion reads as one plotter pen rather than scattered effects." },
+        { "from": "challenger-neon", "raise": "One continuous run: a single dimension string runs from 2018 to the present, so the career reads as one unbroken line." }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Press Proof",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Offset pre-press proof sheets: color bars, registration targets, crop marks",
+      "thesis": "Every project pulled as a press proof. Craft is shown as registration: misaligned process layers snap into register as you read.",
+      "palette": ["#ffffff", "#141414", "#00a0e3", "#e4007c", "#ffed00"],
+      "materials": ["Uncoated proof stock with process-color overprints", "Registration targets, crop marks, color-bar strips as live UI"],
+      "viewport": "Your name as an oversized four-color overprint, slightly out of register, that locks into register on load. Color bars are the nav and the first project plate is already in the frame.",
+      "risk": "Print-production motifs are a familiar move in design portfolios, and full CMYK can turn loud. This is where many runs in the category land."
+    },
+    {
+      "id": "challenger-orienteering",
+      "label": "Orienteering Course",
+      "verdict": "declined",
+      "lineage": "ISOM orienteering maps and control descriptions",
+      "thesis": "Your career as a course: numbered controls from Alliance to MountainDev, overprinted in purple on the terrain.",
+      "palette": ["#ffffff", "#f6c445", "#8aa65a", "#a0522d", "#b0228c"],
+      "materials": ["ISOM ink layers", "Control circles and description tables"],
+      "viewport": "A contour map with the purple course running from 2018 to the present, each control a role.",
+      "case": "Fuses cleanly, but hiring managers don't recognize orienteering, and the course can't explain 'full stack' or craft.",
+      "kept": "One reserved ink, used only for the active path.",
+      "risk": "Reads as a hobby theme, not a professional record.",
+      "hero": "https://impeccable.style/worlds/cards/notation-diagram-systems-orienteering-map-hero.webp"
+    },
+    {
+      "id": "challenger-collider",
+      "label": "Event Display",
+      "verdict": "declined",
+      "lineage": "Particle-collider event displays",
+      "thesis": "Your skills as tracks bursting from one collision.",
+      "palette": ["#07090d", "#4b6a8f", "#f5d300", "#00c8e0", "#e0322c"],
+      "materials": ["Vacuum black", "Detector rings and calorimeter wedges"],
+      "viewport": "A ring section with tech tracks curving outward from your name.",
+      "case": "Fuses into the neon-on-black look your stash already tried, and it buries the real product work.",
+      "kept": "Isolate and dim on selection.",
+      "risk": "Near-black plus neon is the most common AI portfolio look.",
+      "hero": "https://impeccable.style/worlds/cards/scientific-notation-particle-detector-event-display-hero.webp"
+    },
+    {
+      "id": "challenger-papercut",
+      "label": "Layered Papercut",
+      "verdict": "declined",
+      "lineage": "Łowicz layered folk papercuts",
+      "thesis": "The stack as layers of cut colored paper pasted one over another.",
+      "palette": ["#f2efe6", "#d6262f", "#1f6b3a", "#f2b705", "#1d4fa3"],
+      "materials": ["Glossy flat papers", "Fold-symmetric cut shapes"],
+      "viewport": "A symmetric roundel whose layers are your stack.",
+      "case": "Layers map neatly to the stack, but a folk-craft world doesn't read as a hire-me engineering portfolio.",
+      "kept": "Depth by flat overlap only, never by shadow.",
+      "risk": "Charming but off-audience.",
+      "hero": "https://impeccable.style/worlds/cards/craft-making-lowicz-layered-papercut-hero.webp"
+    },
+    {
+      "id": "challenger-fluid-ink",
+      "label": "Ink Basin",
+      "verdict": "declined",
+      "lineage": "Suminagashi marbling",
+      "thesis": "The page as a live fluid surface that answers the pointer.",
+      "palette": ["#f7f7f5", "#1e2a5a", "#2b2b2b", "#9a9a9a"],
+      "materials": ["WebGL fluid", "Indigo and sumi ink"],
+      "viewport": "A marbling basin with your name held in a still margin.",
+      "case": "Beautiful, but a GPU fluid solver is the heavy, effect-led page you ruled out, and it says nothing about your work.",
+      "kept": "Newest ink is darkest: recency encoded as intensity.",
+      "risk": "Slow on mid-range phones. Art piece, not portfolio.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-fluid-ink-basin-hero.webp"
+    },
+    {
+      "id": "challenger-neon",
+      "label": "Neon Circuit",
+      "verdict": "declined",
+      "lineage": "Hand-bent neon signs",
+      "thesis": "Your name bent as one continuous glowing tube.",
+      "palette": ["#0b0b10", "#2f5bff", "#c9372c", "#d9d9e0"],
+      "materials": ["Glass tube", "Gas-discharge glow"],
+      "viewport": "A dark room with your name igniting in cobalt neon.",
+      "case": "Glow on dark is the cluster to avoid, and neon has nothing to say about shipping software.",
+      "kept": "One continuous run threading the whole piece.",
+      "risk": "Pure mood. The work disappears.",
+      "hero": "https://impeccable.style/worlds/cards/magnetism-electricity-plasma-hand-bent-neon-circuit-hero.webp"
+    },
+    {
+      "id": "challenger-rubber-hose",
+      "label": "Rubber-Hose Cel",
+      "verdict": "declined",
+      "lineage": "1930s rubber-hose animation cels",
+      "thesis": "Sections arrive through an iris like gags in a cartoon.",
+      "palette": ["#f4f1ea", "#111111", "#9b9b9b"],
+      "materials": ["Cel ink", "Gray wash"],
+      "viewport": "Your name in fat outlined lettering inside an oval iris.",
+      "case": "Playful, but it undercuts high-stakes products like a clinical-study app.",
+      "kept": "Motion on one rhythm rather than scattered curves.",
+      "risk": "Gimmick reading for a hiring audience.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-rubber-hose-cel-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code" },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "The modern developer portfolio, executed impeccably.",
+    "palette": ["#0a0a0a", "#fafafa", "#3b82f6"],
+    "materials": ["Bento grid of project cards", "Clean grotesk, subtle fade-ins"],
+    "viewport": "Big name and title centered, two buttons, then a bento grid of projects.",
+    "risk": "Indistinguishable from thousands of developer portfolios, by design."
+  },
+  "steer": true
+}

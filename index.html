@@ -2,9 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>King - Frontend Developer</title>
+    <title>King Joshua Montayre · Full Stack Developer</title>
+    <meta
+      name="description"
+      content="King Joshua Montayre is a full stack developer in Cebu City with 7+ years shipping web, backend, and mobile products. Open to full-time remote roles and freelance builds."
+    />
+    <meta name="theme-color" content="#e6e4de" />
+    <script>
+      // Set the theme before first paint so there is no flash.
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          var dark = t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.classList.toggle('dark', dark);
+          document.documentElement.dataset.theme = dark ? 'screen' : 'print';
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

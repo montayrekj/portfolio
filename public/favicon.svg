@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#ffed00"/>
+  <g style="mix-blend-mode:multiply">
+    <path d="M14 12h11v15.5L38.5 12H52L36.5 29.5 53 52H39.5L28.6 36.4 25 40.3V52H14z" fill="#00a0e3" transform="translate(-3.2 2.2)"/>
+    <path d="M14 12h11v15.5L38.5 12H52L36.5 29.5 53 52H39.5L28.6 36.4 25 40.3V52H14z" fill="#e4007c" transform="translate(2.6 -2)"/>
+    <path d="M14 12h11v15.5L38.5 12H52L36.5 29.5 53 52H39.5L28.6 36.4 25 40.3V52H14z" fill="#141414"/>
+  </g>
+</svg>

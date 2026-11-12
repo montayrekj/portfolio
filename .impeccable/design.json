@@ -1,0 +1,1353 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T16:35:12.788Z",
+  "title": "Design System: King Joshua Montayre · Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "press-margin": {
+        "role": "neutral",
+        "displayName": "Press Margin",
+        "canonical": "#e6e4de",
+        "oklch": "oklch(91.9% 0.008 91.5)",
+        "tonalRamp": [
+          "oklch(15% 0.008 91.5)",
+          "oklch(26.4% 0.008 91.5)",
+          "oklch(37.9% 0.008 91.5)",
+          "oklch(49.3% 0.008 91.5)",
+          "oklch(60.7% 0.008 91.5)",
+          "oklch(72.1% 0.008 91.5)",
+          "oklch(83.6% 0.008 91.5)",
+          "oklch(95% 0.008 91.5)"
+        ],
+        "purpose": "Warm-gray page ground around the sheet (Print).",
+        "theme": "print"
+      },
+      "proof-stock": {
+        "role": "neutral",
+        "displayName": "Proof Stock",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100% 0 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0 89.9)",
+          "oklch(26.4% 0 89.9)",
+          "oklch(37.9% 0 89.9)",
+          "oklch(49.3% 0 89.9)",
+          "oklch(60.7% 0 89.9)",
+          "oklch(72.1% 0 89.9)",
+          "oklch(83.6% 0 89.9)",
+          "oklch(95% 0 89.9)"
+        ],
+        "purpose": "White sheet, nav ground, chips (Print).",
+        "theme": "print"
+      },
+      "key-ink": {
+        "role": "neutral",
+        "displayName": "Key Ink",
+        "canonical": "#141414",
+        "oklch": "oklch(19.1% 0 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0 89.9)",
+          "oklch(26.4% 0 89.9)",
+          "oklch(37.9% 0 89.9)",
+          "oklch(49.3% 0 89.9)",
+          "oklch(60.7% 0 89.9)",
+          "oklch(72.1% 0 89.9)",
+          "oklch(83.6% 0 89.9)",
+          "oklch(95% 0 89.9)"
+        ],
+        "purpose": "Text, rules, key plate and key field (Print).",
+        "theme": "print"
+      },
+      "second-ink": {
+        "role": "neutral",
+        "displayName": "Second Ink",
+        "canonical": "#4b4c50",
+        "oklch": "oklch(41.7% 0.007 274.8)",
+        "tonalRamp": [
+          "oklch(15% 0.007 274.8)",
+          "oklch(26.4% 0.007 274.8)",
+          "oklch(37.9% 0.007 274.8)",
+          "oklch(49.3% 0.007 274.8)",
+          "oklch(60.7% 0.007 274.8)",
+          "oklch(72.1% 0.007 274.8)",
+          "oklch(83.6% 0.007 274.8)",
+          "oklch(95% 0.007 274.8)"
+        ],
+        "purpose": "Ledes, metadata, slug text (Print).",
+        "theme": "print"
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#d6d4cd",
+        "oklch": "oklch(87% 0.01 93.6)",
+        "tonalRamp": [
+          "oklch(15% 0.01 93.6)",
+          "oklch(26.4% 0.01 93.6)",
+          "oklch(37.9% 0.01 93.6)",
+          "oklch(49.3% 0.01 93.6)",
+          "oklch(60.7% 0.01 93.6)",
+          "oklch(72.1% 0.01 93.6)",
+          "oklch(83.6% 0.01 93.6)",
+          "oklch(95% 0.01 93.6)"
+        ],
+        "purpose": "1px dividers inside lists (Print).",
+        "theme": "print"
+      },
+      "process-cyan": {
+        "role": "primary",
+        "displayName": "Process Cyan",
+        "canonical": "#00a0e3",
+        "oklch": "oklch(66.9% 0.147 237.2)",
+        "tonalRamp": [
+          "oklch(15% 0.147 237.2)",
+          "oklch(26.4% 0.147 237.2)",
+          "oklch(37.9% 0.147 237.2)",
+          "oklch(49.3% 0.147 237.2)",
+          "oklch(60.7% 0.147 237.2)",
+          "oklch(72.1% 0.147 237.2)",
+          "oklch(83.6% 0.147 237.2)",
+          "oklch(95% 0.147 237.2)"
+        ],
+        "purpose": "Experience ink; current ticket, C plate, LinkedIn plate.",
+        "theme": "print"
+      },
+      "process-magenta": {
+        "role": "secondary",
+        "displayName": "Process Magenta",
+        "canonical": "#e4007c",
+        "oklch": "oklch(59.6% 0.242 358.9)",
+        "tonalRamp": [
+          "oklch(15% 0.242 358.9)",
+          "oklch(26.4% 0.242 358.9)",
+          "oklch(37.9% 0.242 358.9)",
+          "oklch(49.3% 0.242 358.9)",
+          "oklch(60.7% 0.242 358.9)",
+          "oklch(72.1% 0.242 358.9)",
+          "oklch(83.6% 0.242 358.9)",
+          "oklch(95% 0.242 358.9)"
+        ],
+        "purpose": "Builds ink; the only live / on press / focus signal.",
+        "theme": "print"
+      },
+      "process-yellow": {
+        "role": "primary",
+        "displayName": "Process Yellow",
+        "canonical": "#ffed00",
+        "oklch": "oklch(93.1% 0.197 104)",
+        "tonalRamp": [
+          "oklch(15% 0.197 104)",
+          "oklch(26.4% 0.197 104)",
+          "oklch(37.9% 0.197 104)",
+          "oklch(49.3% 0.197 104)",
+          "oklch(60.7% 0.197 104)",
+          "oklch(72.1% 0.197 104)",
+          "oklch(83.6% 0.197 104)",
+          "oklch(95% 0.197 104)"
+        ],
+        "purpose": "About ink; hero field; shared hover ink.",
+        "theme": "print"
+      },
+      "overprint-cm": {
+        "role": "tertiary",
+        "displayName": "Overprint Navy (C+M)",
+        "canonical": "#2e3192",
+        "oklch": "oklch(37.8% 0.156 274.7)",
+        "tonalRamp": [
+          "oklch(15% 0.156 274.7)",
+          "oklch(26.4% 0.156 274.7)",
+          "oklch(37.9% 0.156 274.7)",
+          "oklch(49.3% 0.156 274.7)",
+          "oklch(60.7% 0.156 274.7)",
+          "oklch(72.1% 0.156 274.7)",
+          "oklch(83.6% 0.156 274.7)",
+          "oklch(95% 0.156 274.7)"
+        ],
+        "purpose": "Colour-bar patch; what the cyan-over-magenta trap prints.",
+        "theme": "print"
+      },
+      "overprint-cy": {
+        "role": "tertiary",
+        "displayName": "Overprint Green (C+Y)",
+        "canonical": "#00a651",
+        "oklch": "oklch(63.5% 0.17 151.2)",
+        "tonalRamp": [
+          "oklch(15% 0.17 151.2)",
+          "oklch(26.4% 0.17 151.2)",
+          "oklch(37.9% 0.17 151.2)",
+          "oklch(49.3% 0.17 151.2)",
+          "oklch(60.7% 0.17 151.2)",
+          "oklch(72.1% 0.17 151.2)",
+          "oklch(83.6% 0.17 151.2)",
+          "oklch(95% 0.17 151.2)"
+        ],
+        "purpose": "Colour-bar patch.",
+        "theme": "print"
+      },
+      "overprint-my": {
+        "role": "tertiary",
+        "displayName": "Overprint Red (M+Y)",
+        "canonical": "#ed1c24",
+        "oklch": "oklch(60.3% 0.235 27)",
+        "tonalRamp": [
+          "oklch(15% 0.235 27)",
+          "oklch(26.4% 0.235 27)",
+          "oklch(37.9% 0.235 27)",
+          "oklch(49.3% 0.235 27)",
+          "oklch(60.7% 0.235 27)",
+          "oklch(72.1% 0.235 27)",
+          "oklch(83.6% 0.235 27)",
+          "oklch(95% 0.235 27)"
+        ],
+        "purpose": "Colour-bar patch.",
+        "theme": "print"
+      },
+      "cyan-50": {
+        "role": "tint",
+        "displayName": "Cyan 50",
+        "canonical": "#80cff1",
+        "oklch": "oklch(81.6% 0.091 227.4)",
+        "tonalRamp": [
+          "oklch(15% 0.091 227.4)",
+          "oklch(26.4% 0.091 227.4)",
+          "oklch(37.9% 0.091 227.4)",
+          "oklch(49.3% 0.091 227.4)",
+          "oklch(60.7% 0.091 227.4)",
+          "oklch(72.1% 0.091 227.4)",
+          "oklch(83.6% 0.091 227.4)",
+          "oklch(95% 0.091 227.4)"
+        ],
+        "purpose": "Tint step for colour bars and ramps.",
+        "theme": "print"
+      },
+      "cyan-25": {
+        "role": "tint",
+        "displayName": "Cyan 25",
+        "canonical": "#bfe7f8",
+        "oklch": "oklch(90.5% 0.048 225.5)",
+        "tonalRamp": [
+          "oklch(15% 0.048 225.5)",
+          "oklch(26.4% 0.048 225.5)",
+          "oklch(37.9% 0.048 225.5)",
+          "oklch(49.3% 0.048 225.5)",
+          "oklch(60.7% 0.048 225.5)",
+          "oklch(72.1% 0.048 225.5)",
+          "oklch(83.6% 0.048 225.5)",
+          "oklch(95% 0.048 225.5)"
+        ],
+        "purpose": "Tint step for colour bars and ramps.",
+        "theme": "print"
+      },
+      "magenta-50": {
+        "role": "tint",
+        "displayName": "Magenta 50",
+        "canonical": "#f17fbd",
+        "oklch": "oklch(74.2% 0.156 347.8)",
+        "tonalRamp": [
+          "oklch(15% 0.156 347.8)",
+          "oklch(26.4% 0.156 347.8)",
+          "oklch(37.9% 0.156 347.8)",
+          "oklch(49.3% 0.156 347.8)",
+          "oklch(60.7% 0.156 347.8)",
+          "oklch(72.1% 0.156 347.8)",
+          "oklch(83.6% 0.156 347.8)",
+          "oklch(95% 0.156 347.8)"
+        ],
+        "purpose": "Tint step for colour bars and ramps.",
+        "theme": "print"
+      },
+      "magenta-25": {
+        "role": "tint",
+        "displayName": "Magenta 25",
+        "canonical": "#f8bfde",
+        "oklch": "oklch(86.5% 0.076 345)",
+        "tonalRamp": [
+          "oklch(15% 0.076 345)",
+          "oklch(26.4% 0.076 345)",
+          "oklch(37.9% 0.076 345)",
+          "oklch(49.3% 0.076 345)",
+          "oklch(60.7% 0.076 345)",
+          "oklch(72.1% 0.076 345)",
+          "oklch(83.6% 0.076 345)",
+          "oklch(95% 0.076 345)"
+        ],
+        "purpose": "Tint step for colour bars and ramps.",
+        "theme": "print"
+      },
+      "yellow-50": {
+        "role": "tint",
+        "displayName": "Yellow 50",
+        "canonical": "#fff680",
+        "oklch": "oklch(95.7% 0.14 104.8)",
+        "tonalRamp": [
+          "oklch(15% 0.14 104.8)",
+          "oklch(26.4% 0.14 104.8)",
+          "oklch(37.9% 0.14 104.8)",
+          "oklch(49.3% 0.14 104.8)",
+          "oklch(60.7% 0.14 104.8)",
+          "oklch(72.1% 0.14 104.8)",
+          "oklch(83.6% 0.14 104.8)",
+          "oklch(95% 0.14 104.8)"
+        ],
+        "purpose": "Tint step for colour bars and ramps.",
+        "theme": "print"
+      },
+      "yellow-25": {
+        "role": "tint",
+        "displayName": "Yellow 25",
+        "canonical": "#fffabf",
+        "oklch": "oklch(97.5% 0.075 103.6)",
+        "tonalRamp": [
+          "oklch(15% 0.075 103.6)",
+          "oklch(26.4% 0.075 103.6)",
+          "oklch(37.9% 0.075 103.6)",
+          "oklch(49.3% 0.075 103.6)",
+          "oklch(60.7% 0.075 103.6)",
+          "oklch(72.1% 0.075 103.6)",
+          "oklch(83.6% 0.075 103.6)",
+          "oklch(95% 0.075 103.6)"
+        ],
+        "purpose": "Tint step for colour bars and ramps.",
+        "theme": "print"
+      },
+      "key-75": {
+        "role": "tint",
+        "displayName": "Key 75",
+        "canonical": "#4f4f4f",
+        "oklch": "oklch(42.8% 0 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0 89.9)",
+          "oklch(26.4% 0 89.9)",
+          "oklch(37.9% 0 89.9)",
+          "oklch(49.3% 0 89.9)",
+          "oklch(60.7% 0 89.9)",
+          "oklch(72.1% 0 89.9)",
+          "oklch(83.6% 0 89.9)",
+          "oklch(95% 0 89.9)"
+        ],
+        "purpose": "Tint step for colour bars and ramps.",
+        "theme": "print"
+      },
+      "key-50": {
+        "role": "tint",
+        "displayName": "Key 50",
+        "canonical": "#8a8a8a",
+        "oklch": "oklch(63.3% 0 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0 89.9)",
+          "oklch(26.4% 0 89.9)",
+          "oklch(37.9% 0 89.9)",
+          "oklch(49.3% 0 89.9)",
+          "oklch(60.7% 0 89.9)",
+          "oklch(72.1% 0 89.9)",
+          "oklch(83.6% 0 89.9)",
+          "oklch(95% 0 89.9)"
+        ],
+        "purpose": "Tint step for colour bars and ramps.",
+        "theme": "print"
+      },
+      "key-25": {
+        "role": "tint",
+        "displayName": "Key 25",
+        "canonical": "#c4c4c4",
+        "oklch": "oklch(82% 0 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0 89.9)",
+          "oklch(26.4% 0 89.9)",
+          "oklch(37.9% 0 89.9)",
+          "oklch(49.3% 0 89.9)",
+          "oklch(60.7% 0 89.9)",
+          "oklch(72.1% 0 89.9)",
+          "oklch(83.6% 0 89.9)",
+          "oklch(95% 0 89.9)"
+        ],
+        "purpose": "Tint step for colour bars and ramps.",
+        "theme": "print"
+      },
+      "key-10": {
+        "role": "tint",
+        "displayName": "Key 10",
+        "canonical": "#ececea",
+        "oklch": "oklch(94.3% 0.003 106.5)",
+        "tonalRamp": [
+          "oklch(15% 0.003 106.5)",
+          "oklch(26.4% 0.003 106.5)",
+          "oklch(37.9% 0.003 106.5)",
+          "oklch(49.3% 0.003 106.5)",
+          "oklch(60.7% 0.003 106.5)",
+          "oklch(72.1% 0.003 106.5)",
+          "oklch(83.6% 0.003 106.5)",
+          "oklch(95% 0.003 106.5)"
+        ],
+        "purpose": "Tint step for colour bars and ramps.",
+        "theme": "print"
+      },
+      "on-key-2": {
+        "role": "neutral",
+        "displayName": "On-Key Second",
+        "canonical": "#c9c8c2",
+        "oklch": "oklch(83.2% 0.008 98.9)",
+        "tonalRamp": [
+          "oklch(15% 0.008 98.9)",
+          "oklch(26.4% 0.008 98.9)",
+          "oklch(37.9% 0.008 98.9)",
+          "oklch(49.3% 0.008 98.9)",
+          "oklch(60.7% 0.008 98.9)",
+          "oklch(72.1% 0.008 98.9)",
+          "oklch(83.6% 0.008 98.9)",
+          "oklch(95% 0.008 98.9)"
+        ],
+        "purpose": "Secondary text on the key field (Print).",
+        "theme": "print"
+      },
+      "ticket-magenta": {
+        "role": "neutral",
+        "displayName": "Ticket Magenta",
+        "canonical": "#f8bfde",
+        "oklch": "oklch(86.5% 0.076 345)",
+        "tonalRamp": [
+          "oklch(15% 0.076 345)",
+          "oklch(26.4% 0.076 345)",
+          "oklch(37.9% 0.076 345)",
+          "oklch(49.3% 0.076 345)",
+          "oklch(60.7% 0.076 345)",
+          "oklch(72.1% 0.076 345)",
+          "oklch(83.6% 0.076 345)",
+          "oklch(95% 0.076 345)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "print"
+      },
+      "ticket-magenta-ink": {
+        "role": "neutral",
+        "displayName": "Ticket Magenta Ink",
+        "canonical": "#5c1236",
+        "oklch": "oklch(32.4% 0.111 355.7)",
+        "tonalRamp": [
+          "oklch(15% 0.111 355.7)",
+          "oklch(26.4% 0.111 355.7)",
+          "oklch(37.9% 0.111 355.7)",
+          "oklch(49.3% 0.111 355.7)",
+          "oklch(60.7% 0.111 355.7)",
+          "oklch(72.1% 0.111 355.7)",
+          "oklch(83.6% 0.111 355.7)",
+          "oklch(95% 0.111 355.7)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "print"
+      },
+      "ticket-yellow": {
+        "role": "neutral",
+        "displayName": "Ticket Yellow",
+        "canonical": "#fff680",
+        "oklch": "oklch(95.7% 0.14 104.8)",
+        "tonalRamp": [
+          "oklch(15% 0.14 104.8)",
+          "oklch(26.4% 0.14 104.8)",
+          "oklch(37.9% 0.14 104.8)",
+          "oklch(49.3% 0.14 104.8)",
+          "oklch(60.7% 0.14 104.8)",
+          "oklch(72.1% 0.14 104.8)",
+          "oklch(83.6% 0.14 104.8)",
+          "oklch(95% 0.14 104.8)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "print"
+      },
+      "ticket-yellow-ink": {
+        "role": "neutral",
+        "displayName": "Ticket Yellow Ink",
+        "canonical": "#4a4400",
+        "oklch": "oklch(38.1% 0.08 103.8)",
+        "tonalRamp": [
+          "oklch(15% 0.08 103.8)",
+          "oklch(26.4% 0.08 103.8)",
+          "oklch(37.9% 0.08 103.8)",
+          "oklch(49.3% 0.08 103.8)",
+          "oklch(60.7% 0.08 103.8)",
+          "oklch(72.1% 0.08 103.8)",
+          "oklch(83.6% 0.08 103.8)",
+          "oklch(95% 0.08 103.8)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "print"
+      },
+      "ticket-cyan": {
+        "role": "neutral",
+        "displayName": "Ticket Cyan",
+        "canonical": "#bfe7f8",
+        "oklch": "oklch(90.5% 0.048 225.5)",
+        "tonalRamp": [
+          "oklch(15% 0.048 225.5)",
+          "oklch(26.4% 0.048 225.5)",
+          "oklch(37.9% 0.048 225.5)",
+          "oklch(49.3% 0.048 225.5)",
+          "oklch(60.7% 0.048 225.5)",
+          "oklch(72.1% 0.048 225.5)",
+          "oklch(83.6% 0.048 225.5)",
+          "oklch(95% 0.048 225.5)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "print"
+      },
+      "ticket-cyan-ink": {
+        "role": "neutral",
+        "displayName": "Ticket Cyan Ink",
+        "canonical": "#0b3a52",
+        "oklch": "oklch(33.1% 0.064 236.4)",
+        "tonalRamp": [
+          "oklch(15% 0.064 236.4)",
+          "oklch(26.4% 0.064 236.4)",
+          "oklch(37.9% 0.064 236.4)",
+          "oklch(49.3% 0.064 236.4)",
+          "oklch(60.7% 0.064 236.4)",
+          "oklch(72.1% 0.064 236.4)",
+          "oklch(83.6% 0.064 236.4)",
+          "oklch(95% 0.064 236.4)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "print"
+      },
+      "ticket-key": {
+        "role": "neutral",
+        "displayName": "Ticket Key",
+        "canonical": "#ececea",
+        "oklch": "oklch(94.3% 0.003 106.5)",
+        "tonalRamp": [
+          "oklch(15% 0.003 106.5)",
+          "oklch(26.4% 0.003 106.5)",
+          "oklch(37.9% 0.003 106.5)",
+          "oklch(49.3% 0.003 106.5)",
+          "oklch(60.7% 0.003 106.5)",
+          "oklch(72.1% 0.003 106.5)",
+          "oklch(83.6% 0.003 106.5)",
+          "oklch(95% 0.003 106.5)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "print"
+      },
+      "ticket-key-ink": {
+        "role": "neutral",
+        "displayName": "Ticket Key Ink",
+        "canonical": "#4b4c50",
+        "oklch": "oklch(41.7% 0.007 274.8)",
+        "tonalRamp": [
+          "oklch(15% 0.007 274.8)",
+          "oklch(26.4% 0.007 274.8)",
+          "oklch(37.9% 0.007 274.8)",
+          "oklch(49.3% 0.007 274.8)",
+          "oklch(60.7% 0.007 274.8)",
+          "oklch(72.1% 0.007 274.8)",
+          "oklch(83.6% 0.007 274.8)",
+          "oklch(95% 0.007 274.8)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "print"
+      },
+      "ticket-current-ink": {
+        "role": "neutral",
+        "displayName": "Ticket Current Ink",
+        "canonical": "#082636",
+        "oklch": "oklch(25.5% 0.046 236.1)",
+        "tonalRamp": [
+          "oklch(15% 0.046 236.1)",
+          "oklch(26.4% 0.046 236.1)",
+          "oklch(37.9% 0.046 236.1)",
+          "oklch(49.3% 0.046 236.1)",
+          "oklch(60.7% 0.046 236.1)",
+          "oklch(72.1% 0.046 236.1)",
+          "oklch(83.6% 0.046 236.1)",
+          "oklch(95% 0.046 236.1)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "print"
+      },
+      "screen-margin": {
+        "role": "neutral",
+        "displayName": "Screen Margin",
+        "canonical": "#0b0b0d",
+        "oklch": "oklch(15.1% 0.004 285.9)",
+        "tonalRamp": [
+          "oklch(15% 0.004 285.9)",
+          "oklch(26.4% 0.004 285.9)",
+          "oklch(37.9% 0.004 285.9)",
+          "oklch(49.3% 0.004 285.9)",
+          "oklch(60.7% 0.004 285.9)",
+          "oklch(72.1% 0.004 285.9)",
+          "oklch(83.6% 0.004 285.9)",
+          "oklch(95% 0.004 285.9)"
+        ],
+        "purpose": "Page ground (Screen theme).",
+        "theme": "screen"
+      },
+      "screen-stock": {
+        "role": "neutral",
+        "displayName": "Screen Stock",
+        "canonical": "#141416",
+        "oklch": "oklch(19.2% 0.004 286)",
+        "tonalRamp": [
+          "oklch(15% 0.004 286)",
+          "oklch(26.4% 0.004 286)",
+          "oklch(37.9% 0.004 286)",
+          "oklch(49.3% 0.004 286)",
+          "oklch(60.7% 0.004 286)",
+          "oklch(72.1% 0.004 286)",
+          "oklch(83.6% 0.004 286)",
+          "oklch(95% 0.004 286)"
+        ],
+        "purpose": "Sheet ground (Screen theme).",
+        "theme": "screen"
+      },
+      "screen-ink": {
+        "role": "neutral",
+        "displayName": "Screen Ink",
+        "canonical": "#f3f2ec",
+        "oklch": "oklch(96% 0.008 98.9)",
+        "tonalRamp": [
+          "oklch(15% 0.008 98.9)",
+          "oklch(26.4% 0.008 98.9)",
+          "oklch(37.9% 0.008 98.9)",
+          "oklch(49.3% 0.008 98.9)",
+          "oklch(60.7% 0.008 98.9)",
+          "oklch(72.1% 0.008 98.9)",
+          "oklch(83.6% 0.008 98.9)",
+          "oklch(95% 0.008 98.9)"
+        ],
+        "purpose": "Text, rules, key field (Screen theme).",
+        "theme": "screen"
+      },
+      "screen-second-ink": {
+        "role": "neutral",
+        "displayName": "Screen Second Ink",
+        "canonical": "#b2b1aa",
+        "oklch": "oklch(75.9% 0.01 100)",
+        "tonalRamp": [
+          "oklch(15% 0.01 100)",
+          "oklch(26.4% 0.01 100)",
+          "oklch(37.9% 0.01 100)",
+          "oklch(49.3% 0.01 100)",
+          "oklch(60.7% 0.01 100)",
+          "oklch(72.1% 0.01 100)",
+          "oklch(83.6% 0.01 100)",
+          "oklch(95% 0.01 100)"
+        ],
+        "purpose": "Secondary text (Screen theme).",
+        "theme": "screen"
+      },
+      "screen-hairline": {
+        "role": "neutral",
+        "displayName": "Screen Hairline",
+        "canonical": "#2f2f34",
+        "oklch": "oklch(30.7% 0.009 285.9)",
+        "tonalRamp": [
+          "oklch(15% 0.009 285.9)",
+          "oklch(26.4% 0.009 285.9)",
+          "oklch(37.9% 0.009 285.9)",
+          "oklch(49.3% 0.009 285.9)",
+          "oklch(60.7% 0.009 285.9)",
+          "oklch(72.1% 0.009 285.9)",
+          "oklch(83.6% 0.009 285.9)",
+          "oklch(95% 0.009 285.9)"
+        ],
+        "purpose": "Dividers (Screen theme).",
+        "theme": "screen"
+      },
+      "screen-key-10": {
+        "role": "neutral",
+        "displayName": "Screen Key 10",
+        "canonical": "#232327",
+        "oklch": "oklch(25.8% 0.007 285.9)",
+        "tonalRamp": [
+          "oklch(15% 0.007 285.9)",
+          "oklch(26.4% 0.007 285.9)",
+          "oklch(37.9% 0.007 285.9)",
+          "oklch(49.3% 0.007 285.9)",
+          "oklch(60.7% 0.007 285.9)",
+          "oklch(72.1% 0.007 285.9)",
+          "oklch(83.6% 0.007 285.9)",
+          "oklch(95% 0.007 285.9)"
+        ],
+        "theme": "screen"
+      },
+      "screen-name-red": {
+        "role": "tertiary",
+        "displayName": "Screen Name Red",
+        "canonical": "#ff3b3b",
+        "oklch": "oklch(65.5% 0.231 26.4)",
+        "tonalRamp": [
+          "oklch(15% 0.231 26.4)",
+          "oklch(26.4% 0.231 26.4)",
+          "oklch(37.9% 0.231 26.4)",
+          "oklch(49.3% 0.231 26.4)",
+          "oklch(60.7% 0.231 26.4)",
+          "oklch(72.1% 0.231 26.4)",
+          "oklch(83.6% 0.231 26.4)",
+          "oklch(95% 0.231 26.4)"
+        ],
+        "purpose": "Name C-plate in Screen, composited with screen blend.",
+        "theme": "screen"
+      },
+      "screen-name-green": {
+        "role": "tertiary",
+        "displayName": "Screen Name Green",
+        "canonical": "#22d96a",
+        "oklch": "oklch(77.7% 0.206 150.1)",
+        "tonalRamp": [
+          "oklch(15% 0.206 150.1)",
+          "oklch(26.4% 0.206 150.1)",
+          "oklch(37.9% 0.206 150.1)",
+          "oklch(49.3% 0.206 150.1)",
+          "oklch(60.7% 0.206 150.1)",
+          "oklch(72.1% 0.206 150.1)",
+          "oklch(83.6% 0.206 150.1)",
+          "oklch(95% 0.206 150.1)"
+        ],
+        "purpose": "Name M-plate in Screen.",
+        "theme": "screen"
+      },
+      "screen-name-blue": {
+        "role": "tertiary",
+        "displayName": "Screen Name Blue",
+        "canonical": "#3b6bff",
+        "oklch": "oklch(58.5% 0.226 265.8)",
+        "tonalRamp": [
+          "oklch(15% 0.226 265.8)",
+          "oklch(26.4% 0.226 265.8)",
+          "oklch(37.9% 0.226 265.8)",
+          "oklch(49.3% 0.226 265.8)",
+          "oklch(60.7% 0.226 265.8)",
+          "oklch(72.1% 0.226 265.8)",
+          "oklch(83.6% 0.226 265.8)",
+          "oklch(95% 0.226 265.8)"
+        ],
+        "purpose": "Name Y-plate in Screen.",
+        "theme": "screen"
+      },
+      "screen-yellow-field": {
+        "role": "neutral",
+        "displayName": "Screen Yellow Field",
+        "canonical": "#19170a",
+        "oklch": "oklch(20.3% 0.024 100.6)",
+        "tonalRamp": [
+          "oklch(15% 0.024 100.6)",
+          "oklch(26.4% 0.024 100.6)",
+          "oklch(37.9% 0.024 100.6)",
+          "oklch(49.3% 0.024 100.6)",
+          "oklch(60.7% 0.024 100.6)",
+          "oklch(72.1% 0.024 100.6)",
+          "oklch(83.6% 0.024 100.6)",
+          "oklch(95% 0.024 100.6)"
+        ],
+        "purpose": "Dark ground under the hero yellow dot screen (Screen).",
+        "theme": "screen"
+      },
+      "screen-link-hover": {
+        "role": "secondary",
+        "displayName": "Screen Magenta Light",
+        "canonical": "#ff5aa8",
+        "oklch": "oklch(70.8% 0.212 354.7)",
+        "tonalRamp": [
+          "oklch(15% 0.212 354.7)",
+          "oklch(26.4% 0.212 354.7)",
+          "oklch(37.9% 0.212 354.7)",
+          "oklch(49.3% 0.212 354.7)",
+          "oklch(60.7% 0.212 354.7)",
+          "oklch(72.1% 0.212 354.7)",
+          "oklch(83.6% 0.212 354.7)",
+          "oklch(95% 0.212 354.7)"
+        ],
+        "purpose": "Link hover on dark (Screen only; one-off).",
+        "theme": "screen"
+      },
+      "screen-ticket-magenta": {
+        "role": "neutral",
+        "displayName": "Screen Ticket Magenta",
+        "canonical": "#3a0f26",
+        "oklch": "oklch(25% 0.074 350.7)",
+        "tonalRamp": [
+          "oklch(15% 0.074 350.7)",
+          "oklch(26.4% 0.074 350.7)",
+          "oklch(37.9% 0.074 350.7)",
+          "oklch(49.3% 0.074 350.7)",
+          "oklch(60.7% 0.074 350.7)",
+          "oklch(72.1% 0.074 350.7)",
+          "oklch(83.6% 0.074 350.7)",
+          "oklch(95% 0.074 350.7)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "screen"
+      },
+      "screen-ticket-magenta-ink": {
+        "role": "neutral",
+        "displayName": "Screen Ticket Magenta Ink",
+        "canonical": "#f4bcd8",
+        "oklch": "oklch(85.4% 0.073 347.3)",
+        "tonalRamp": [
+          "oklch(15% 0.073 347.3)",
+          "oklch(26.4% 0.073 347.3)",
+          "oklch(37.9% 0.073 347.3)",
+          "oklch(49.3% 0.073 347.3)",
+          "oklch(60.7% 0.073 347.3)",
+          "oklch(72.1% 0.073 347.3)",
+          "oklch(83.6% 0.073 347.3)",
+          "oklch(95% 0.073 347.3)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "screen"
+      },
+      "screen-ticket-yellow": {
+        "role": "neutral",
+        "displayName": "Screen Ticket Yellow",
+        "canonical": "#2b2805",
+        "oklch": "oklch(27.2% 0.052 104.5)",
+        "tonalRamp": [
+          "oklch(15% 0.052 104.5)",
+          "oklch(26.4% 0.052 104.5)",
+          "oklch(37.9% 0.052 104.5)",
+          "oklch(49.3% 0.052 104.5)",
+          "oklch(60.7% 0.052 104.5)",
+          "oklch(72.1% 0.052 104.5)",
+          "oklch(83.6% 0.052 104.5)",
+          "oklch(95% 0.052 104.5)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "screen"
+      },
+      "screen-ticket-yellow-ink": {
+        "role": "neutral",
+        "displayName": "Screen Ticket Yellow Ink",
+        "canonical": "#ebe28e",
+        "oklch": "oklch(90.1% 0.106 103)",
+        "tonalRamp": [
+          "oklch(15% 0.106 103)",
+          "oklch(26.4% 0.106 103)",
+          "oklch(37.9% 0.106 103)",
+          "oklch(49.3% 0.106 103)",
+          "oklch(60.7% 0.106 103)",
+          "oklch(72.1% 0.106 103)",
+          "oklch(83.6% 0.106 103)",
+          "oklch(95% 0.106 103)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "screen"
+      },
+      "screen-ticket-cyan": {
+        "role": "neutral",
+        "displayName": "Screen Ticket Cyan",
+        "canonical": "#0b2e3f",
+        "oklch": "oklch(28.5% 0.05 233.7)",
+        "tonalRamp": [
+          "oklch(15% 0.05 233.7)",
+          "oklch(26.4% 0.05 233.7)",
+          "oklch(37.9% 0.05 233.7)",
+          "oklch(49.3% 0.05 233.7)",
+          "oklch(60.7% 0.05 233.7)",
+          "oklch(72.1% 0.05 233.7)",
+          "oklch(83.6% 0.05 233.7)",
+          "oklch(95% 0.05 233.7)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "screen"
+      },
+      "screen-ticket-cyan-ink": {
+        "role": "neutral",
+        "displayName": "Screen Ticket Cyan Ink",
+        "canonical": "#a3dbf3",
+        "oklch": "oklch(86.1% 0.066 226.3)",
+        "tonalRamp": [
+          "oklch(15% 0.066 226.3)",
+          "oklch(26.4% 0.066 226.3)",
+          "oklch(37.9% 0.066 226.3)",
+          "oklch(49.3% 0.066 226.3)",
+          "oklch(60.7% 0.066 226.3)",
+          "oklch(72.1% 0.066 226.3)",
+          "oklch(83.6% 0.066 226.3)",
+          "oklch(95% 0.066 226.3)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "screen"
+      },
+      "screen-ticket-key": {
+        "role": "neutral",
+        "displayName": "Screen Ticket Key",
+        "canonical": "#232327",
+        "oklch": "oklch(25.8% 0.007 285.9)",
+        "tonalRamp": [
+          "oklch(15% 0.007 285.9)",
+          "oklch(26.4% 0.007 285.9)",
+          "oklch(37.9% 0.007 285.9)",
+          "oklch(49.3% 0.007 285.9)",
+          "oklch(60.7% 0.007 285.9)",
+          "oklch(72.1% 0.007 285.9)",
+          "oklch(83.6% 0.007 285.9)",
+          "oklch(95% 0.007 285.9)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "screen"
+      },
+      "screen-ticket-key-ink": {
+        "role": "neutral",
+        "displayName": "Screen Ticket Key Ink",
+        "canonical": "#b8b7b0",
+        "oklch": "oklch(77.8% 0.01 100)",
+        "tonalRamp": [
+          "oklch(15% 0.01 100)",
+          "oklch(26.4% 0.01 100)",
+          "oklch(37.9% 0.01 100)",
+          "oklch(49.3% 0.01 100)",
+          "oklch(60.7% 0.01 100)",
+          "oklch(72.1% 0.01 100)",
+          "oklch(83.6% 0.01 100)",
+          "oklch(95% 0.01 100)"
+        ],
+        "purpose": "Job-ticket tint field or its second ink.",
+        "theme": "screen"
+      }
+    },
+    "themes": {
+      "source": "src/index.css — :root is Print (light), html.dark is Screen (dark); toggled by class \"dark\" + data-theme on <html>.",
+      "print": {
+        "--margin": "#e6e4de",
+        "--stock": "#ffffff",
+        "--ink": "#141414",
+        "--ink-2": "#4b4c50",
+        "--hair": "#d6d4cd",
+        "--k": "#141414",
+        "--k-field": "#141414",
+        "--on-k": "#ffffff",
+        "--on-k-2": "#c9c8c2",
+        "--k-plate": "#141414",
+        "--k-10": "#ececea",
+        "--name-c": "#00a0e3",
+        "--name-m": "#e4007c",
+        "--name-y": "#ffed00",
+        "--name-blend": "multiply",
+        "--tk-ink": "#141414",
+        "--tk-m": "#f8bfde",
+        "--tk-m-2": "#5c1236",
+        "--tk-y": "#fff680",
+        "--tk-y-2": "#4a4400",
+        "--tk-c": "#bfe7f8",
+        "--tk-c-2": "#0b3a52",
+        "--tk-k": "#ececea",
+        "--tk-k-2": "#4b4c50",
+        "hero-field": "#ffed00 flat",
+        "theme-color": "#e6e4de"
+      },
+      "screen": {
+        "--margin": "#0b0b0d",
+        "--stock": "#141416",
+        "--ink": "#f3f2ec",
+        "--ink-2": "#b2b1aa",
+        "--hair": "#2f2f34",
+        "--k": "#f3f2ec",
+        "--k-field": "#f3f2ec",
+        "--on-k": "#141414",
+        "--on-k-2": "#4b4c50",
+        "--k-plate": "#f3f2ec",
+        "--k-10": "#232327",
+        "--name-c": "#ff3b3b",
+        "--name-m": "#22d96a",
+        "--name-y": "#3b6bff",
+        "--name-blend": "screen",
+        "--tk-ink": "#f3f2ec",
+        "--tk-m": "#3a0f26",
+        "--tk-m-2": "#f4bcd8",
+        "--tk-y": "#2b2805",
+        "--tk-y-2": "#ebe28e",
+        "--tk-c": "#0b2e3f",
+        "--tk-c-2": "#a3dbf3",
+        "--tk-k": "#232327",
+        "--tk-k-2": "#b8b7b0",
+        "hero-field": "#19170a + radial-gradient(circle, rgba(255,229,0,0.62) 1.35px, transparent 1.75px) / 7px 7px",
+        "link-hover": "#ff5aa8",
+        "theme-color": "#0b0b0d"
+      },
+      "fixedAcrossThemes": [
+        "--c #00a0e3",
+        "--m #e4007c",
+        "--y #ffed00",
+        "--cm #2e3192",
+        "--cy #00a651",
+        "--my #ed1c24",
+        "tint steps --c-50/25 --m-50/25 --y-50/25 --k-75/50/25",
+        "text on process fields: #141414 on C/Y, #ffffff on M and K patch",
+        "proof card + progressive proofs: #ffffff stock, #141414 ink"
+      ]
+    },
+    "typographyMeta": {
+      "display-name": {
+        "displayName": "Display Name",
+        "purpose": "KING / JOSHUA / MONTAYRE only; uppercase; four stacked plates, C/M/Y multiply (Print) or screen (Screen) under K. Under 900px: 13.2cqi."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Section titles; contact title at clamp(40px, 4.6vw, 70px)."
+      },
+      "display-sm": {
+        "displayName": "Display Small",
+        "purpose": "Sub-section titles (e.g. the plates heading)."
+      },
+      "plate-letter": {
+        "displayName": "Plate Letter",
+        "purpose": "Giant C/M/Y/K on separation plates; 96px under 760px."
+      },
+      "ticket-year": {
+        "displayName": "Ticket Year",
+        "purpose": "Start year on job tickets."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Feature build titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Ticket company names. Hero role uses 800 / wdth 112 / clamp(24px, 2.3vw, 34px) / 1.05."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Gang-run project names; contact way main line is 820 / wdth 106 / clamp(22px, 2.6vw, 38px)."
+      },
+      "body-lead": {
+        "displayName": "Lead",
+        "purpose": "Ticket summaries, contact lead, about lead (clamp(19px,1.5vw,22px)/1.5)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text; measure 44–68ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons (16px), nav patches (15px), theme segments (14px), chips, ink tags (13px/620)."
+      },
+      "slug": {
+        "displayName": "Slug",
+        "purpose": "Press slug lines only; uppercase."
+      }
+    },
+    "fonts": [
+      {
+        "family": "Anybody Variable",
+        "source": "@fontsource-variable/anybody/wdth.css",
+        "axes": "wght, wdth (font-stretch 100–125%)"
+      },
+      {
+        "family": "Archivo Variable",
+        "source": "@fontsource-variable/archivo/wdth.css",
+        "axes": "wght, wdth"
+      }
+    ],
+    "shadows": [
+      {
+        "name": "patch-hover",
+        "value": "inset 0 0 0 3px var(--stock)",
+        "purpose": "State stroke on a hovered nav patch. Not elevation."
+      },
+      {
+        "name": "patch-active",
+        "value": "inset 0 -5px 0 0 var(--on-patch)",
+        "purpose": "5px underline bar on the in-view section patch."
+      },
+      {
+        "name": "chip-pulled",
+        "value": "inset 0 0 0 1.5px var(--ink)",
+        "purpose": "Doubles the plate chip rule when pulled."
+      }
+    ],
+    "strokes": [
+      {
+        "name": "hairline",
+        "value": "1px solid var(--hair)",
+        "purpose": "Dividers inside lists, slug rules."
+      },
+      {
+        "name": "rule",
+        "value": "1.5px solid var(--ink)",
+        "purpose": "Nav cells, chips, tickets, ink tags."
+      },
+      {
+        "name": "rule-heavy",
+        "value": "2px solid",
+        "purpose": "Buttons, facts top rule."
+      },
+      {
+        "name": "stamp",
+        "value": "2.5px solid",
+        "purpose": "Stamps."
+      },
+      {
+        "name": "stack-top",
+        "value": "3px solid var(--ink)",
+        "purpose": "Top of the ticket stack."
+      },
+      {
+        "name": "cut",
+        "value": "1.5px dashed var(--ink)",
+        "purpose": "Gang-run sheet."
+      },
+      {
+        "name": "focus",
+        "value": "outline: 3px solid var(--m); outline-offset: 3px",
+        "purpose": "Global :focus-visible."
+      }
+    ],
+    "blend": [
+      {
+        "name": "overprint",
+        "value": "mix-blend-mode: multiply on an isolation: isolate #ffffff backing",
+        "purpose": "Separation plates, contact plates, halftone plates, name in Print."
+      },
+      {
+        "name": "additive-name",
+        "value": "mix-blend-mode: screen",
+        "purpose": "Name plates in Screen theme."
+      },
+      {
+        "name": "trap",
+        "value": "clamp(18px, 2vw, 30px) (contact: clamp(18px, 2vw, 28px))",
+        "purpose": "Overlap between neighbouring plates; negative margin plus matching padding."
+      }
+    ],
+    "halftone": {
+      "screenAngles": {
+        "c": 15,
+        "m": 75,
+        "y": 0,
+        "k": 45
+      },
+      "dotRadiusMax": "0.72 × cell",
+      "cell": {
+        "hero": 4.2,
+        "progressive": 3.8
+      },
+      "gcr": 0.85,
+      "ground": "cyan 0.26 tint screen behind the portrait",
+      "printOrder": [
+        "y",
+        "m",
+        "c",
+        "k"
+      ],
+      "isolationDimOpacity": 0.07,
+      "inks": {
+        "c": "#00a0e3",
+        "m": "#e4007c",
+        "y": "#ffed00",
+        "k": "#141414"
+      }
+    },
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All state transitions."
+      },
+      {
+        "name": "register",
+        "value": "1.3s ease-out, delays 0.2s / 0.26s / 0.32s; from translate(sx*0.13em, sy*0.09em)",
+        "purpose": "Name plates run into register on load."
+      },
+      {
+        "name": "slip",
+        "value": "spring: force 0.16, damping 0.72, decay 0.82; max 9px; fine pointers only; trigger speed > 0.6px/ms",
+        "purpose": "Pointer velocity knocks name plates out of register."
+      },
+      {
+        "name": "feed",
+        "value": "0.8s cubic-bezier(0.65, 0, 0.35, 1); clip-path inset(0 0 100% 0) → inset(0)",
+        "purpose": "Theme switch via View Transition."
+      },
+      {
+        "name": "live-pulse",
+        "value": "2.4s ease-in-out infinite, opacity → 0.25",
+        "purpose": "Dot in the On press tag."
+      },
+      {
+        "name": "state-fast",
+        "value": "0.2s",
+        "purpose": "Button/link colour changes."
+      },
+      {
+        "name": "icon-nudge",
+        "value": "translateX(3px) 0.35s ease-out",
+        "purpose": "Trailing arrows on hover."
+      },
+      {
+        "name": "plate-fade",
+        "value": "opacity 0.5s ease-out",
+        "purpose": "Halftone plates appear / isolate."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "No register, pulse, wipe, smooth scroll, or plate/chip/image transitions; everything registered."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1240px",
+        "note": "nav tint ramp hidden below"
+      },
+      {
+        "name": "lg",
+        "value": "1080px",
+        "note": "tickets 2-col, plates 2-up, nav name text and seg sublines hidden"
+      },
+      {
+        "name": "md",
+        "value": "900px",
+        "note": "hero, features, about, contact stack"
+      },
+      {
+        "name": "sm",
+        "value": "760px",
+        "note": "nav collapses to patches + flip; bar-h 50px; tickets 1-col"
+      },
+      {
+        "name": "xs",
+        "value": "420px",
+        "note": "chips and plates 1-up; plates trap vertically"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Key Button",
+      "kind": "button",
+      "refersTo": "button-key",
+      "description": "Primary action: ink rectangle that turns magenta on hover.",
+      "html": "<a class=\"ds-btn ds-btn--key\" href=\"#\">Start a project <svg class=\"ds-icon\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\"><path d=\"M2.5 8h10M8.5 4l4 4-4 4\" stroke-linecap=\"square\"/></svg></a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;gap:10px;padding:15px 20px;border:2px solid var(--ds-b,currentColor);font-family:'Archivo Variable',Archivo,system-ui,sans-serif;font-weight:680;font-size:16px;line-height:1;text-decoration:none;transition:background .2s,color .2s,border-color .2s}.ds-icon{width:1em;height:1em;transition:transform .35s cubic-bezier(.16,1,.3,1)}.ds-btn:hover .ds-icon{transform:translateX(3px)}.ds-btn:focus-visible{outline:3px solid var(--m,#e4007c);outline-offset:3px}.ds-btn--key{background:var(--ink,#141414);color:var(--stock,#fff);--ds-b:var(--ink,#141414)}.ds-btn--key:hover{background:var(--m,#e4007c);color:#fff;--ds-b:var(--m,#e4007c)}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action: ink-ruled outline that fills yellow on hover.",
+      "html": "<a class=\"ds-btn-line\" href=\"#\">Download résumé <svg class=\"ds-icon\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\"><path d=\"M8 2.5v10M4 8.5l4 4 4-4M3 14.5h10\" stroke-linecap=\"square\"/></svg></a>",
+      "css": ".ds-btn-line{display:inline-flex;align-items:center;gap:10px;padding:15px 20px;border:2px solid var(--ink,#141414);color:var(--ink,#141414);background:transparent;font-family:'Archivo Variable',Archivo,system-ui,sans-serif;font-weight:680;font-size:16px;line-height:1;text-decoration:none;transition:background .2s,color .2s,border-color .2s}.ds-btn-line .ds-icon{width:1em;height:1em;transition:transform .35s cubic-bezier(.16,1,.3,1)}.ds-btn-line:hover{background:var(--y,#ffed00);color:#141414;border-color:#141414}.ds-btn-line:hover .ds-icon{transform:translateX(3px)}.ds-btn-line:focus-visible{outline:3px solid var(--m,#e4007c);outline-offset:3px}"
+    },
+    {
+      "name": "Colour-bar Nav",
+      "kind": "nav",
+      "refersTo": "nav-patch-cyan",
+      "description": "Sticky press colour bar: name cell, four ink patches with readouts, tint ramp, Print/Screen toggle, résumé.",
+      "html": "<nav class=\"ds-bar\"><a class=\"ds-bar__id\" href=\"#\">King Joshua Montayre</a><div class=\"ds-bar__nav\"><a class=\"ds-patch ds-patch--c is-active\" href=\"#\"><span class=\"ds-patch__ro\">C 100</span>Experience</a><a class=\"ds-patch ds-patch--m\" href=\"#\"><span class=\"ds-patch__ro\">M 100</span>Builds</a><a class=\"ds-patch ds-patch--y\" href=\"#\"><span class=\"ds-patch__ro\">Y 100</span>About</a><a class=\"ds-patch ds-patch--k\" href=\"#\"><span class=\"ds-patch__ro\">K 100</span>Contact</a></div><div class=\"ds-bar__ramp\"><i style=\"background:#80cff1\"></i><i style=\"background:#f17fbd\"></i><i style=\"background:#fff680\"></i><i style=\"background:#8a8a8a\"></i><i style=\"background:#c4c4c4\"></i></div><button class=\"ds-seg is-on\">Print<small>CMYK · light</small></button><button class=\"ds-seg\">Screen<small>RGB · dark</small></button></nav>",
+      "css": ".ds-bar{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto auto;height:54px;background:var(--stock,#fff);border:1.5px solid var(--ink,#141414);font-family:'Archivo Variable',Archivo,system-ui,sans-serif;color:var(--ink,#141414)}.ds-bar>*+*{border-left:1.5px solid var(--ink,#141414)}.ds-bar__id{display:flex;align-items:center;padding:0 18px 0 14px;font-weight:700;font-size:15px;text-decoration:none;color:inherit;white-space:nowrap}.ds-bar__nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}.ds-patch{position:relative;display:flex;align-items:flex-end;padding:0 12px 7px;background:var(--p);color:var(--op);font-weight:680;font-size:15px;line-height:1;text-decoration:none;transition:box-shadow .25s cubic-bezier(.16,1,.3,1)}.ds-patch+.ds-patch{border-left:1px solid var(--ink,#141414)}.ds-patch--c{--p:#00a0e3;--op:#141414}.ds-patch--m{--p:#e4007c;--op:#fff}.ds-patch--y{--p:#ffed00;--op:#141414}.ds-patch--k{--p:#141414;--op:#fff}.ds-patch__ro{position:absolute;top:7px;right:10px;font-size:11px;font-weight:600;font-variant-numeric:tabular-nums;opacity:.8}.ds-patch:hover{box-shadow:inset 0 0 0 3px var(--stock,#fff)}.ds-patch.is-active{box-shadow:inset 0 -5px 0 0 var(--op)}.ds-patch:focus-visible,.ds-seg:focus-visible{outline:3px solid #e4007c;outline-offset:3px}.ds-bar__ramp{display:flex}.ds-bar__ramp i{width:18px}.ds-bar__ramp i+i{border-left:1px solid var(--ink,#141414)}.ds-seg{display:grid;align-content:center;padding:0 14px;font:inherit;font-weight:680;font-size:14px;line-height:1.1;text-align:left;background:transparent;color:var(--ink,#141414);border:0;border-left:1.5px solid var(--ink,#141414);transition:background .2s,color .2s}.ds-seg small{font-size:10.5px;font-weight:550;opacity:.75;font-variant-numeric:tabular-nums}.ds-seg.is-on{background:var(--ink,#141414);color:var(--stock,#fff)}.ds-seg:not(.is-on):hover{background:#ffed00;color:#141414}"
+    },
+    {
+      "name": "Plate Chip",
+      "kind": "chip",
+      "refersTo": "plate-chip",
+      "description": "Stack-layer chip; hover/focus isolates that ink in the halftone portrait.",
+      "html": "<button class=\"ds-chip ds-chip--m\" aria-pressed=\"false\"><span class=\"ds-chip__sw\">M</span><span class=\"ds-chip__t\"><b>Mobile</b><span>React Native · Expo</span></span></button>",
+      "css": ".ds-chip{display:grid;grid-template-columns:44px minmax(0,1fr);width:260px;text-align:left;padding:0;background:var(--stock,#fff);color:var(--ink,#141414);border:1.5px solid var(--ink,#141414);border-radius:0;font-family:'Archivo Variable',Archivo,system-ui,sans-serif;transition:transform .45s cubic-bezier(.16,1,.3,1),box-shadow .3s cubic-bezier(.16,1,.3,1);cursor:pointer}.ds-chip:hover,.ds-chip:focus-visible,.ds-chip[aria-pressed=true]{transform:translateX(-10px);box-shadow:inset 0 0 0 1.5px var(--ink,#141414)}.ds-chip:focus-visible{outline:3px solid #e4007c;outline-offset:3px}.ds-chip__sw{display:grid;place-items:center;background:var(--sw);color:var(--osw);font-family:'Anybody Variable',sans-serif;font-weight:900;font-size:22px;border-right:1.5px solid var(--ink,#141414)}.ds-chip--m{--sw:#e4007c;--osw:#fff}.ds-chip__t{display:grid;padding:8px 10px;line-height:1.25}.ds-chip__t b{font-weight:720;font-size:15px}.ds-chip__t span{font-size:12.5px;color:var(--ink-2,#4b4c50)}"
+    },
+    {
+      "name": "Job Ticket",
+      "kind": "card",
+      "refersTo": "ticket-current",
+      "description": "Full-bleed work-history band; current job solid cyan, past jobs cycle tint fields m → y → c → k.",
+      "html": "<article class=\"ds-ticket\"><div><span class=\"ds-ticket__year\">2024</span><span class=\"ds-ticket__per\">Sep 2024 – now</span></div><div><h3 class=\"ds-ticket__co\">MountainDev</h3><p class=\"ds-ticket__role\">Full Stack Developer</p><ul class=\"ds-ticket__pts\"><li>Migrated a legacy React Native app to Expo SDK 52.</li></ul></div><div><span class=\"ds-stamp\">On press</span></div></article>",
+      "css": ".ds-ticket{display:grid;grid-template-columns:168px minmax(0,1fr) 180px;gap:20px 40px;padding:34px 40px 40px;background:#00a0e3;color:#141414;border-top:3px solid #141414;border-bottom:1.5px solid #141414;font-family:'Archivo Variable',Archivo,system-ui,sans-serif}.ds-ticket__year{display:block;font-family:'Anybody Variable',sans-serif;font-weight:900;font-size:56px;line-height:.86;letter-spacing:-.03em;font-variant-numeric:tabular-nums}.ds-ticket__per{display:block;margin-top:8px;font-size:14px;font-weight:600;color:#082636;font-variant-numeric:tabular-nums}.ds-ticket__co{margin:0;font-family:'Anybody Variable',sans-serif;font-weight:850;font-stretch:112%;font-size:36px;line-height:1;letter-spacing:-.02em}.ds-ticket__role{margin:6px 0 0;font-weight:650;font-size:16px;color:#082636}.ds-ticket__pts{list-style:none;margin:16px 0 0;padding:0}.ds-ticket__pts li{position:relative;padding-left:22px;font-size:16px}.ds-ticket__pts li::before{content:'';position:absolute;left:2px;top:.62em;width:8px;height:8px;background:#141414}.ds-stamp{display:inline-block;padding:7px 11px 6px;border:2.5px solid #e4007c;background:#e4007c;color:#fff;font-family:'Anybody Variable',sans-serif;font-weight:900;font-stretch:110%;font-size:15px;letter-spacing:.06em;line-height:1;text-transform:uppercase;rotate:-2.5deg}"
+    },
+    {
+      "name": "Separation Plates",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Four trapped, multiplied ink plates; overlaps print true overprints; hover isolates one.",
+      "html": "<ul class=\"ds-band\"><li class=\"ds-sep ds-sep--c\"><span class=\"ds-sep__l\">C</span><b>Interface</b></li><li class=\"ds-sep ds-sep--m\"><span class=\"ds-sep__l\">M</span><b>Mobile</b></li><li class=\"ds-sep ds-sep--y\"><span class=\"ds-sep__l\">Y</span><b>Services &amp; data</b></li><li class=\"ds-sep ds-sep--k\"><span class=\"ds-sep__l\">K</span><b>Delivery</b></li></ul>",
+      "css": ".ds-band{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));isolation:isolate;background:#fff;margin:0;padding:0;list-style:none}.ds-sep{--trap:24px;min-height:240px;padding:28px;background:var(--si);color:var(--on);mix-blend-mode:multiply;font-family:'Anybody Variable',sans-serif;transition:opacity .4s cubic-bezier(.16,1,.3,1),filter .4s cubic-bezier(.16,1,.3,1)}.ds-sep+.ds-sep{margin-left:calc(-1*var(--trap));padding-left:calc(28px + var(--trap))}.ds-band:hover .ds-sep:not(:hover){opacity:.32;filter:saturate(.4)}.ds-sep--c{--si:#00a0e3;--on:#141414}.ds-sep--m{--si:#e4007c;--on:#fff}.ds-sep--y{--si:#ffed00;--on:#141414}.ds-sep--k{--si:var(--k-field,#141414);--on:var(--on-k,#fff)}.ds-sep__l{display:block;font-weight:900;font-stretch:125%;font-size:120px;line-height:.74;letter-spacing:-.04em;margin-bottom:20px}.ds-sep b{font-weight:850;font-stretch:112%;font-size:24px}"
+    },
+    {
+      "name": "Contact Plates",
+      "kind": "custom",
+      "refersTo": "contact-way-mail",
+      "description": "Email (magenta) and LinkedIn (cyan) plates trapped so the join overprints navy.",
+      "html": "<div class=\"ds-ways\"><div class=\"ds-way ds-way--mail\"><p class=\"ds-way__lab\">Email</p><a class=\"ds-way__main\" href=\"#\">kmontayre07@gmail.com</a><a class=\"ds-way__btn\" href=\"#\">Write an email</a></div><a class=\"ds-way ds-way--li\" href=\"#\"><p class=\"ds-way__lab\">LinkedIn</p><span class=\"ds-way__main\">in/king-joshua-montayre</span></a></div>",
+      "css": ".ds-ways{--trap:24px;display:grid;isolation:isolate;background:#fff;max-width:520px;font-family:'Archivo Variable',Archivo,system-ui,sans-serif}.ds-way{display:grid;gap:10px;padding:32px;background:var(--wi);color:var(--wo);mix-blend-mode:multiply;text-decoration:none}.ds-way+.ds-way{margin-top:calc(-1*var(--trap));padding-top:calc(32px + var(--trap))}.ds-way--mail{--wi:#e4007c;--wo:#fff}.ds-way--li{--wi:#00a0e3;--wo:#141414}.ds-way__lab{margin:0;font-size:14px;font-weight:680}.ds-way__main{font-family:'Anybody Variable',sans-serif;font-weight:820;font-stretch:106%;font-size:30px;line-height:1.05;letter-spacing:-.015em;color:inherit;text-decoration:none;overflow-wrap:anywhere}a.ds-way__main:hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px}.ds-way__btn{justify-self:start;padding:12px 16px;border:2px solid #fff;background:#fff;color:#141414;font-weight:680;font-size:15px;line-height:1;text-decoration:none;transition:background .2s,color .2s}.ds-way__btn:hover{background:#141414;border-color:#141414;color:#fff}.ds-way__btn:focus-visible,.ds-way:focus-visible{outline:3px solid #e4007c;outline-offset:3px}"
+    },
+    {
+      "name": "Press Slug Line",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Slug line that joins sections: reg mark, job, plate swatches, proof date.",
+      "html": "<div class=\"ds-slug\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\"><circle cx=\"12\" cy=\"12\" r=\"7\"/><path d=\"M12 0v24M0 12h24\"/></svg><span class=\"ds-slug__job\">King Joshua Montayre · portfolio · sheet 2 · work history</span><span class=\"ds-slug__pl\"><i style=\"background:#00a0e3\"></i>C<i style=\"background:#e4007c\"></i>M<i style=\"background:#ffed00\"></i>Y<i style=\"background:#141414\"></i>K</span><span>4/C process · proofed Nov 2026</span></div>",
+      "css": ".ds-slug{display:flex;align-items:center;gap:14px;padding:10px 24px;font-family:'Archivo Variable',Archivo,system-ui,sans-serif;font-size:11.5px;font-weight:620;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2,#4b4c50);border-bottom:1px solid var(--hair,#d6d4cd)}.ds-slug svg{color:var(--ink,#141414);flex:none}.ds-slug__job{flex:1}.ds-slug__pl{display:inline-flex;align-items:center;gap:4px;font-variant-numeric:tabular-nums}.ds-slug__pl i{width:10px;height:10px;margin-left:6px}.ds-slug__pl i:first-child{margin-left:0}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Underlined 2px link; live links carry a magenta underline; hover turns magenta.",
+      "html": "<a class=\"ds-link ds-link--live\" href=\"#\">Visit live site</a>",
+      "css": ".ds-link{display:inline-flex;align-items:center;gap:6px;font-family:'Archivo Variable',Archivo,system-ui,sans-serif;font-weight:680;font-size:16px;color:var(--ink,#141414);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px;transition:color .2s,text-decoration-color .2s}.ds-link--live{text-decoration-color:#e4007c}.ds-link:hover{color:#e4007c;text-decoration-color:#e4007c}.ds-link:focus-visible{outline:3px solid #e4007c;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Press Proof",
+    "overview": "The site is a sheet pulled off an offset press and laid on the bench for approval. White proof stock (Proof Stock) sits inside a warm-gray press margin (Press Margin). Crop marks, registration targets, colour bars, slug lines and halftone ramps belong to the sheet. The content is printed in four process inks, cyan, magenta, yellow and key, and each ink owns whole regions as a flat field: the yellow hero field, the cyan current-job ticket, the four separation plates, the key-plate contact field. Where inks cross, they multiply into true overprint colours. They are never faked with opacity.\n\nThe full stack is told as four separations: Interface (C), Mobile (M), Services & data (Y), Delivery (K). Each one is partial by itself, and together they make the full-colour image. The live CMYK halftone portrait shows this directly. It is drawn on canvas at classic screen angles (C 15°, M 75°, Y 0°, K 45°), so the four dot grids form a rosette instead of a moiré. The visitor can pull any plate out of the print, and the About section's progressive proofs (Y, +M, +C, +K) lay the plates down in press order.\n\nThe system has two themes. **Print** (light) is subtractive CMYK on white stock. **Screen** (dark) is an RGB proof on a near-black ground: the name's plates become red, green and blue and composite additively, the yellow field becomes a yellow dot screen on a dark olive ground, and the key-ink roles invert. Density is high: heavy ink coverage, a wide-black display face, and tabular figures. The world explicitly rejects the \"dark hero, gradient name, skill-icon grid, three equal project cards\" portfolio template.",
+    "keyCharacteristics": [
+      "Four process inks as flat, unshadowed fields that own whole regions.",
+      "Real overprints made with `mix-blend-mode: multiply` (Print) or `screen` (Screen): the name over the yellow field, trapped plate joins, trapped contact plates.",
+      "Press furniture as structure: crop marks, registration targets, colour-bar strips, slug lines, halftone ramps.",
+      "A live CMYK halftone portrait with plate isolation, and progressive proofs.",
+      "A colour-bar nav whose patches carry ink readouts (C 100, M 100, Y 100, K 100).",
+      "Square corners everywhere. Strokes are ink rules (1–3px), not soft borders."
+    ],
+    "rules": [
+      {
+        "name": "The Whole-Region Rule",
+        "body": "An ink is a field, not an accent. Cyan, magenta, yellow and key cover whole regions (a hero half, a ticket, a plate, a section) as flat fills. They are not used as thin decoration on gray UI.",
+        "section": "colors"
+      },
+      {
+        "name": "The Magenta Means Live Rule",
+        "body": "Magenta marks what is live, on press, or focused, and nothing else carries those meanings. Magenta is also the Builds ink, but it is never a generic accent for headings or icons.",
+        "section": "colors"
+      },
+      {
+        "name": "The Real Overprint Rule",
+        "body": "Where two inks overlap, they overlap with `mix-blend-mode: multiply` on a white backing (`isolation: isolate`), so the trap prints the true overprint colour (cyan over magenta gives navy). Don't simulate overlaps with opacity or a third hand-picked fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fixed-Ink Rule",
+        "body": "Text on a process field uses a literal ink that does not flip with the theme: Key Ink on cyan and yellow, white on magenta. A process field cannot invert, so its text must not invert either.",
+        "section": "colors"
+      },
+      {
+        "name": "The Figures-in-Register Rule",
+        "body": "Every number (years, periods, C 100 readouts, proof dates) is set with `tabular-nums`.",
+        "section": "typography"
+      },
+      {
+        "name": "The Width-Is-Rank Rule",
+        "body": "Hierarchy comes from Anybody's width and weight together. The bigger the role, the wider it is set (100 for figures, up to 125 for plate letters). Body copy never uses Anybody.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Ink Rule",
+        "body": "Process fields are flat and unshadowed. If something needs to read as \"on top\", it overprints or traps. It never floats.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** give each section its process ink as a whole flat field: Experience C, Builds M, About Y, Contact K.",
+      "**Do** make overlaps real. Put `mix-blend-mode: multiply` on a white, `isolation: isolate` backing, and trap neighbouring plates by `clamp(18px, 2vw, 30px)`.",
+      "**Do** reserve magenta for live, on-press and focus states, and keep the 3px magenta focus outline at a 3px offset.",
+      "**Do** set every figure with `tabular-nums`, and give press furniture (slug lines, colour strips, crop marks, registration targets) real structural jobs at section joins and trims.",
+      "**Do** keep text on process fields fixed (#141414 on cyan and yellow, white on magenta) in both themes, and keep proofs on white stock.",
+      "**Do** route every new state through the `cubic-bezier(0.16, 1, 0.3, 1)` ease-out and provide a reduced-motion fallback that leaves everything registered."
+    ],
+    "donts": [
+      "**Don't** add drop shadows, blur, glass, or rounded corners. Depth comes from overprint and trap.",
+      "**Don't** use colour gradients as decoration. Tonal change is a halftone dot screen or a stepped tint.",
+      "**Don't** use magenta as a generic accent on headings, icons or borders.",
+      "**Don't** fake an overprint with opacity or a hand-picked third colour.",
+      "**Don't** set body copy in Anybody, or set display lines in Archivo.",
+      "**Don't** fall back to the portfolio template: dark hero with gradient name, skill-icon grid, three equal project cards."
+    ]
+  }
+}

@@ -1,43 +1,29 @@
-import LinkedIn from '../assets/linkedin.png';
-import Github from '../assets/github.webp';
+import { ColorStrip } from './Marks';
 
 export default function Footer() {
   return (
-    <div className="w-full text-sm dark:!bg-[#111111] !bg-[#EEEEEE60] text-center py-2 flex items-center justify-center flex-col gap-2">
-      <div>
-        Copyright © 2026, King Joshua Montayre. Built with{' '}
-        <a
-          className="border-b border-black dark:border-white pb-[1px] text-sm"
-          href="https://vitejs.dev/"
-          target="_blank"
-        >
-          Vite
-        </a>
-        . Source on{' '}
-        <a
-          className="border-b border-black dark:border-white pb-[1px] text-sm"
-          href="https://github.com/montayrekj/portfolio"
-          target="_blank"
-        >
-          Github
-        </a>
+    <footer className="slug">
+      <ColorStrip className="slug__strip" />
+      <div className="slug__row">
+        <span>
+          <b>© {new Date().getFullYear()} King Joshua Montayre</b>
+        </span>
+        <span>
+          Built with React + Vite ·{' '}
+          <a href="https://github.com/montayrekj/portfolio" target="_blank" rel="noreferrer">
+            source on GitHub
+          </a>
+        </span>
+        <span className="slug__links">
+          <a href="https://www.linkedin.com/in/king-joshua-montayre/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a href="https://github.com/montayrekj" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a href="#top">Back to top</a>
+        </span>
       </div>
-      <div className="flex">
-        <a
-          className="cursor-pointer"
-          href="https://www.linkedin.com/in/king-joshua-montayre/"
-          target="_blank"
-        >
-          <img src={LinkedIn} className="h-8 w-8 ml-3 mb-3 rounded-md" />
-        </a>
-        <a
-          className="cursor-pointer"
-          href="https://github.com/montayrekj"
-          target="_blank"
-        >
-          <img src={Github} className="h-8 w-8 ml-3 mb-3 rounded-md" />
-        </a>
-      </div>
-    </div>
+    </footer>
   );
 }

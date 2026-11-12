@@ -1,12 +1,14 @@
-import { Analytics } from "@vercel/analytics/react";
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import Layout from "./layout.tsx";
+import { Analytics } from '@vercel/analytics/react';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import '@fontsource-variable/anybody/wdth.css';
+import '@fontsource-variable/archivo/wdth.css';
+import './index.css';
+import Layout from './layout.tsx';
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Layout />
     <Analytics />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

@@ -1,55 +1,138 @@
-import ReactMUI from '../assets/react-mui.png';
-import SampleEcommerce from '../assets/sample-ecommerce.png';
-import Clock from '../assets/clock.png';
-import Toggle from '../assets/toggle.png';
-import ChatApp from '../assets/react-chat-app.png';
-import CTherapies from '../assets/ctherapies.png';
-import TaraTakbo from '../assets/tara-takbo.png';
-import DinkUp from '../assets/dink-up.png';
-import TopFrame from '../assets/top-frame.png';
+import Aluma from '../assets/builds/aluma-1600.webp';
+import AlumaSm from '../assets/builds/aluma-800.webp';
+import LuluInjects from '../assets/builds/lulu-injects-800.webp';
+import RealAesthetix from '../assets/builds/real-aesthetix-800.webp';
+import TrimStation from '../assets/builds/trim-station-1600.webp';
+import TrimStationSm from '../assets/builds/trim-station-800.webp';
+import TopFrame from '../assets/builds/top-frame-1600.webp';
+import TopFrameSm from '../assets/builds/top-frame-800.webp';
+import DinkUp from '../assets/builds/dink-up-1600.webp';
+import DinkUpSm from '../assets/builds/dink-up-800.webp';
+import TaraTakbo from '../assets/builds/tara-takbo-1600.webp';
+import TaraTakboSm from '../assets/builds/tara-takbo-800.webp';
+import CTherapies from '../assets/builds/ctherapies-1600.webp';
+import CTherapiesSm from '../assets/builds/ctherapies-800.webp';
+import ChatApp from '../assets/builds/react-chat-app-1600.webp';
+import ChatAppSm from '../assets/builds/react-chat-app-800.webp';
+import SampleEcommerce from '../assets/builds/sample-ecommerce-1600.webp';
+import SampleEcommerceSm from '../assets/builds/sample-ecommerce-800.webp';
+import ReactMUI from '../assets/builds/react-mui-1600.webp';
+import ReactMUISm from '../assets/builds/react-mui-800.webp';
+import Toggle from '../assets/builds/toggle-800.webp';
+import Clock from '../assets/builds/clock-800.webp';
 
-export const PROJECTS = [
+export type Partner = {
+  title: string;
+  place: string;
+  image: string;
+  projectLink: string;
+};
+
+export type Project = {
+  title: string;
+  description: string;
+  image: string;
+  imageSm: string;
+  /** natural aspect ratio of the screenshot, width / height */
+  ratio: number;
+  tags: string[];
+  projectLink: string;
+  githubLink?: string;
+  /** label for the live link; CodePen pens are demos, not deployments */
+  liveLabel?: string;
+  /** the only screenshot is an empty state: show a type tile instead */
+  typeCover?: boolean;
+  /** sibling sites shipped alongside this one */
+  partners?: Partner[];
+};
+
+export const PROJECTS: Project[] = [
   {
-    title: 'TopFrame',
+    title: 'Aluma Medical Aesthetics',
     description:
-      'An AI-powered Instagram post curator. Upload 20+ photos, describe your vibe, and let AI pick the best shots and generate caption and song suggestions — powered by Claude and Ollama.',
-    image: TopFrame,
-    tags: ['Next.js', 'TailwindCSS', 'Claude AI', 'Ollama'],
-    projectLink: 'https://top-frame.vercel.app/',
-    githubLink: 'https://github.com/montayrekj/top-frame',
+      'The site for Aluma, a network that helps nurse injectors open and run their own medspas, with content managed in Payload, data on Neon, and Mailchimp for email. Partner injectors in the network get sites of their own.',
+    image: Aluma,
+    imageSm: AlumaSm,
+    ratio: 2880 / 1472,
+    tags: ['Next.js', 'Payload CMS', 'Neon Postgres', 'Mailchimp'],
+    projectLink: 'https://www.alumamedicalaesthetics.com/',
+    partners: [
+      {
+        title: 'Lulu Injects',
+        place: 'Rancho Cucamonga, CA',
+        image: LuluInjects,
+        projectLink: 'https://luluinjects.com/',
+      },
+      {
+        title: 'Real Aesthetix',
+        place: 'Carlsbad, CA',
+        image: RealAesthetix,
+        projectLink: 'https://www.realaesthetix.com/',
+      },
+    ],
+  },
+  {
+    title: 'Trim Station',
+    description:
+      'The website for Trim Station, a two-chair barbershop in Cebu City: a price board, barber profiles, a style chart to point at, live open-or-closed hours, a map, and online booking through Setmore.',
+    image: TrimStation,
+    imageSm: TrimStationSm,
+    ratio: 2880 / 1472,
+    tags: ['Next.js', 'Setmore booking', 'Google Maps'],
+    projectLink: 'https://trim-station.vercel.app/',
   },
   {
     title: 'Dink Up',
     description:
       'A mobile-first PWA for scoring pickleball games. Supports singles and doubles with proper server rotation tracking, rally and side-out scoring modes, configurable win scores, per-team undo, and full offline capability via service workers.',
     image: DinkUp,
+    imageSm: DinkUpSm,
+    ratio: 3412 / 1748,
     tags: ['Next.js', 'TailwindCSS', 'Zustand', 'PWA'],
     projectLink: 'https://dink-up.vercel.app/',
     githubLink: 'https://github.com/montayrekj/dink-up',
   },
   {
-    title: 'TaraTakbo',
-    description:
-      'This project is a website to easily map your running routes using Google Maps API and Mapbox GL JS and Turf.js. It also allows you to add your running routes to a map, visualize the route turn by turn and then share them with your friends.',
-    image: TaraTakbo,
-    tags: ['React', 'Next.js', 'TailwindCSS'],
-    projectLink: 'http://tara-takbo.vercel.app/',
-    githubLink: 'https://github.com/montayrekj/tara-takbo',
-  },
-  {
     title: 'CTherapies',
     description:
-      'This project is a website for a company that provides therapy services. It is a simple website with a home page, about page, services page, and contact page.',
+      'A website for a therapy services company, with home, about, services, and contact pages.',
     image: CTherapies,
+    imageSm: CTherapiesSm,
+    ratio: 3416 / 1742,
     tags: ['React', 'Next.js', 'TailwindCSS'],
     projectLink: 'http://ctherapies.vercel.app/',
     githubLink: 'https://github.com/montayrekj/ctherapies',
   },
   {
+    title: 'TaraTakbo',
+    description:
+      'Map your running routes with the Google Maps API, Mapbox GL JS, and Turf.js. Add routes to a map, replay them turn by turn, and share them with friends.',
+    image: TaraTakbo,
+    imageSm: TaraTakboSm,
+    ratio: 3414 / 1738,
+    tags: ['React', 'Next.js', 'TailwindCSS'],
+    projectLink: 'http://tara-takbo.vercel.app/',
+    githubLink: 'https://github.com/montayrekj/tara-takbo',
+  },
+  {
+    title: 'TopFrame',
+    description:
+      'An AI-powered Instagram post curator. Upload 20+ photos, describe your vibe, and let AI pick the best shots and generate caption and song suggestions — powered by Claude and Ollama.',
+    image: TopFrame,
+    imageSm: TopFrameSm,
+    ratio: 3410 / 1742,
+    tags: ['Next.js', 'TailwindCSS', 'Claude AI', 'Ollama'],
+    typeCover: true,
+    projectLink: 'https://top-frame.vercel.app/',
+    githubLink: 'https://github.com/montayrekj/top-frame',
+  },
+  {
     title: "Let's Chat!",
     description:
-      'This project is a messaging app powered using Firebase/Firestore. You can message on the main/general channel as well as create your own channels to chat with your friends. ',
+      'A messaging app on Firebase and Firestore. Chat in the general channel or create your own channels with friends.',
     image: ChatApp,
+    imageSm: ChatAppSm,
+    ratio: 3406 / 1728,
     tags: ['React', 'Vite', 'Firebase', 'Firestore'],
     projectLink: 'https://react-chat-app-beta-bice.vercel.app/',
     githubLink: 'https://github.com/montayrekj/react-chat-app',
@@ -57,8 +140,10 @@ export const PROJECTS = [
   {
     title: 'Sample Ecommerce',
     description:
-      'This web application is a sample ecommerce project using Next.js with TailwindCSS. This contains the home and product page and has the ability to add to cart and favorites but all done on the client side.',
+      'A sample storefront in Next.js and TailwindCSS with home and product pages, cart, and favorites, all handled client-side.',
     image: SampleEcommerce,
+    imageSm: SampleEcommerceSm,
+    ratio: 3416 / 1738,
     tags: ['React', 'Next.js', 'TailwindCSS'],
     projectLink: 'https://sample-ecommerce-chi.vercel.app/',
     githubLink: 'https://github.com/montayrekj/sample_ecommerce',
@@ -66,8 +151,10 @@ export const PROJECTS = [
   {
     title: 'React MUI',
     description:
-      'This web application is just a simple sample project using Next.js to showcase implementation skills on React/Next.js as well as the use of Material UI as UI Library.',
+      'A sample Next.js project showing React and Next.js implementation with Material UI as the component library.',
     image: ReactMUI,
+    imageSm: ReactMUISm,
+    ratio: 3414 / 1742,
     tags: ['React', 'Next.js', 'MaterialUI'],
     projectLink: 'https://react-mui-five.vercel.app/',
     githubLink: 'https://github.com/montayrekj/react-mui',
@@ -75,18 +162,23 @@ export const PROJECTS = [
   {
     title: 'Dark Mode Toggle',
     description:
-      'This project is a toggle element for dark/light mode using just CSS and Javascript for styling and animation. Preview and code is on Codepen.',
+      'A dark/light mode toggle built with just CSS and JavaScript for the styling and animation.',
     image: Toggle,
-    imgClass: 'w-full',
-    tags: ['Javascript', 'CSS'],
+    imageSm: Toggle,
+    ratio: 660 / 510,
+    tags: ['JavaScript', 'CSS'],
     projectLink: 'https://codepen.io/montayrekj/pen/VwYGjdb',
+    liveLabel: 'Open on CodePen',
   },
   {
     title: 'Aesthetic Clock',
     description:
-      'This project is an aesthetic clock with the React logo as inspiration and is created using CSS and Javascript. Preview and code is on Codepen.',
+      'A clock inspired by the React logo, drawn and animated with CSS and JavaScript.',
     image: Clock,
-    tags: ['Javascript', 'CSS'],
+    imageSm: Clock,
+    ratio: 1272 / 785,
+    tags: ['JavaScript', 'CSS'],
     projectLink: 'https://codepen.io/montayrekj/pen/NWPYNgE',
+    liveLabel: 'Open on CodePen',
   },
 ];
