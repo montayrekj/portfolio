@@ -4,6 +4,7 @@ import { RegMark } from './Marks';
 
 // Past jobs run as tint fields, cycling through the process inks.
 const TINTS = ['m', 'y', 'c', 'k'] as const;
+const PAST = JOBS.filter((j) => !j.current);
 
 export default function Experience() {
   return (
@@ -18,11 +19,11 @@ export default function Experience() {
       </div>
 
       <ol className="tickets">
-        {JOBS.map((job, i) => (
+        {JOBS.map((job) => (
           <li
             key={job.company}
             className={classNames('ticket', job.current && 'ticket--current')}
-            data-tint={job.current ? undefined : TINTS[(i - 1) % TINTS.length]}
+            data-tint={job.current ? undefined : TINTS[PAST.indexOf(job) % TINTS.length]}
           >
             <div className="ticket__when">
               <RegMark size={18} className="ticket__reg" />

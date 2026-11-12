@@ -589,13 +589,15 @@ a {
   color: var(--ink-2);
 }
 .hero__now {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 12px;
   margin-top: 20px;
+  max-width: 54ch;
   font-weight: 620;
   font-size: 16px;
+  line-height: 1.6;
+}
+.hero__now .press-tag {
+  margin-right: 10px;
+  vertical-align: 2px;
 }
 .press-tag {
   display: inline-flex;
