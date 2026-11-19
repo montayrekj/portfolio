@@ -50,11 +50,11 @@ export const PROJECTS: Project[] = [
   {
     title: 'Aluma Medical Aesthetics',
     description:
-      'The site for Aluma, a network that helps nurse injectors open and run their own medspas, with content managed in Payload, data on Neon, and Mailchimp for email. Partner injectors in the network get sites of their own.',
+      'The site for Aluma, a network that helps nurse injectors open and run their own medspas, with content managed in Payload, data on Neon, and Mailchimp for email. Partner injectors in the network get sites of their own. Some partner injectors also has shops built recently.',
     image: Aluma,
     imageSm: AlumaSm,
     ratio: 2880 / 1472,
-    tags: ['Next.js', 'Payload CMS', 'Neon Postgres', 'Mailchimp'],
+    tags: ['Next.js', 'Payload CMS', 'Neon Postgres', 'Mailchimp', 'Shopify'],
     projectLink: 'https://www.alumamedicalaesthetics.com/',
     partners: [
       {
