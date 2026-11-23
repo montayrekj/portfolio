@@ -22,8 +22,8 @@ function Links({ project }: { project: Project }) {
 }
 
 export default function Builds() {
-  const featured = PROJECTS.slice(0, 5);
-  const gang = PROJECTS.slice(5);
+  const featured = PROJECTS.slice(0, 7);
+  const gang = PROJECTS.slice(7);
 
   return (
     <section className="section builds" id="builds" aria-labelledby="builds-title">

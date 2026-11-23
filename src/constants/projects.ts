@@ -2,6 +2,10 @@ import Aluma from '../assets/builds/aluma-1600.webp';
 import AlumaSm from '../assets/builds/aluma-800.webp';
 import LuluInjects from '../assets/builds/lulu-injects-800.webp';
 import RealAesthetix from '../assets/builds/real-aesthetix-800.webp';
+import CebuTimepieces from '../assets/builds/cebu-timepieces-1600.webp';
+import CebuTimepiecesSm from '../assets/builds/cebu-timepieces-800.webp';
+import ShineOn from '../assets/builds/shineon-1600.webp';
+import ShineOnSm from '../assets/builds/shineon-800.webp';
 import TrimStation from '../assets/builds/trim-station-1600.webp';
 import TrimStationSm from '../assets/builds/trim-station-800.webp';
 import TopFrame from '../assets/builds/top-frame-1600.webp';
@@ -72,6 +76,26 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    title: 'Cebu Timepieces',
+    description:
+      'A chat-first watch catalog for Cebu Timepieces, an independent watch dealer in Talisay, Cebu. Stock comes from a Google Sheet the dealer edits, every photo is watermarked as it is served, and each Message button opens Messenger or Instagram with the watch already named.',
+    image: CebuTimepieces,
+    imageSm: CebuTimepiecesSm,
+    ratio: 3380 / 1742,
+    tags: ['Next.js', 'TailwindCSS', 'Google Sheets', 'Sharp'],
+    projectLink: 'https://cebu-timepieces.vercel.app/',
+  },
+  {
+    title: 'ShineOn Car Solutions',
+    description:
+      'A site for ShineOn, a car detailing studio in Cebu City. Pick a vehicle size and services like tint, PPF, coatings or paint correction, and it gives a price range and shop time in about 30 seconds, then opens Messenger with the quote filled in.',
+    image: ShineOn,
+    imageSm: ShineOnSm,
+    ratio: 3382 / 1728,
+    tags: ['Next.js', 'TypeScript', 'Messenger handoff'],
+    projectLink: 'https://shineon-web.vercel.app/',
+  },
+  {
     title: 'Trim Station',
     description:
       'The website for Trim Station, a two-chair barbershop in Cebu City: a price board, barber profiles, a style chart to point at, live open-or-closed hours, a map, and online booking through Setmore.',
@@ -95,13 +119,12 @@ export const PROJECTS: Project[] = [
   {
     title: 'CTherapies',
     description:
-      'A website for a therapy services company, with home, about, services, and contact pages.',
+      'A rebuild of the site for Community Therapies, an outpatient physical therapy clinic in Clovis, New Mexico. Patients can see the services and the insurance plans the clinic takes, meet the therapists, read the FAQs, and book online, call, or send a message.',
     image: CTherapies,
     imageSm: CTherapiesSm,
-    ratio: 3416 / 1742,
+    ratio: 3382 / 1736,
     tags: ['React', 'Next.js', 'TailwindCSS'],
     projectLink: 'http://ctherapies.vercel.app/',
-    githubLink: 'https://github.com/montayrekj/ctherapies',
   },
   {
     title: 'TaraTakbo',
