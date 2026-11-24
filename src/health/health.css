@@ -1,0 +1,344 @@
+/* ==========================================================================
+   Press check: the private health sheet for Selected builds.
+   Status prints as real overprints on a yellow backing:
+   OK = cyan over yellow (green), Fail = magenta over yellow (red),
+   Warning = yellow alone. Words always sit beside the ink.
+   ========================================================================== */
+
+.pc {
+  padding-bottom: clamp(40px, 6vw, 80px);
+}
+
+/* Overprint swatch: the element is the yellow plate, ::before the second ink. */
+.ovp {
+  position: relative;
+  isolation: isolate;
+  background: var(--y);
+}
+.ovp::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+.ovp--ok::before {
+  background: var(--c);
+}
+.ovp--fail::before {
+  background: var(--m);
+}
+.ovp--skip {
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px var(--ink-2);
+}
+
+.pc__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 24px 48px;
+  padding: clamp(32px, 5vw, 72px) var(--pad) clamp(24px, 3vw, 40px);
+}
+.pc__back {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 15px;
+  font-weight: 680;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+.pc__back:hover {
+  color: var(--m);
+}
+.pc__lede {
+  max-width: 56ch;
+  margin-top: 18px;
+  font-size: 19px;
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+.pc__run {
+  display: grid;
+  justify-items: end;
+  gap: 12px;
+}
+.pc__run .btn:disabled {
+  cursor: progress;
+  background: var(--ink-2);
+  --btn-border: var(--ink-2);
+}
+.pc__when {
+  min-height: 1.5em;
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+
+/* the colour bar: one patch per build */
+.pc__tally {
+  display: grid;
+  gap: 10px;
+  padding: 0 var(--pad) clamp(24px, 3vw, 36px);
+}
+.pc__bar {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  height: 14px;
+}
+.pc__bar i {
+  display: block;
+}
+.pc__tally p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 680;
+}
+
+.pc__problem {
+  margin: 0 var(--pad) 24px;
+  padding: 16px 18px;
+  border: 2px solid var(--ink);
+  font-weight: 560;
+}
+
+.pc__pulling {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 14px;
+  margin: 0 var(--pad);
+}
+.pc__pulling i {
+  background: var(--c);
+  animation: pull 1.6s var(--ease-out) infinite both;
+}
+.pc__pulling i:nth-child(2) {
+  background: var(--m);
+  animation-delay: 0.15s;
+}
+.pc__pulling i:nth-child(3) {
+  background: var(--y);
+  animation-delay: 0.3s;
+}
+.pc__pulling i:nth-child(4) {
+  background: var(--k);
+  animation-delay: 0.45s;
+}
+@keyframes pull {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  51% {
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
+
+/* Jobs: one ticket per build */
+.pc__jobs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 2.4vw, 32px);
+  margin: 0;
+  padding: 0 var(--pad);
+  list-style: none;
+  transition: opacity 0.2s;
+}
+.pc__jobs.is-stale {
+  opacity: 0.55;
+}
+
+.job {
+  border: 1.5px solid var(--ink);
+}
+.job__head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  background: var(--job-field);
+  color: var(--tk-ink);
+  border-bottom: 1.5px solid var(--ink);
+}
+.job--c {
+  --job-field: var(--tk-c);
+  --job-ink-2: var(--tk-c-2);
+}
+.job--m {
+  --job-field: var(--tk-m);
+  --job-ink-2: var(--tk-m-2);
+}
+.job--y {
+  --job-field: var(--tk-y);
+  --job-ink-2: var(--tk-y-2);
+}
+.job--k {
+  --job-field: var(--tk-k);
+  --job-ink-2: var(--tk-k-2);
+}
+.job__no {
+  font-family: 'Anybody Variable', sans-serif;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 0.86;
+  color: var(--job-ink-2);
+}
+.job__name {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+.job__title {
+  margin: 0;
+  font-family: 'Anybody Variable', sans-serif;
+  font-weight: 850;
+  font-stretch: 112%;
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.job__url {
+  justify-self: start;
+  font-size: 14px;
+  color: var(--job-ink-2);
+  text-underline-offset: 5px;
+  overflow-wrap: anywhere;
+}
+
+.pc-stamp {
+  padding: 8px 12px 7px;
+  font-family: 'Anybody Variable', sans-serif;
+  font-weight: 900;
+  font-stretch: 110%;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #141414;
+  rotate: -2.5deg;
+  white-space: nowrap;
+}
+.pc-stamp.ovp--fail {
+  color: #ffffff;
+}
+
+.job__checks {
+  margin: 0;
+  padding: 4px 20px 8px;
+  list-style: none;
+}
+.chk {
+  display: grid;
+  grid-template-columns: minmax(110px, 9.5rem) minmax(0, 1fr) auto 4.5rem;
+  align-items: baseline;
+  gap: 4px 16px;
+  padding: 11px 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.chk + .chk {
+  border-top: 1px solid var(--hair);
+}
+.chk__label {
+  font-weight: 680;
+}
+.chk__detail {
+  color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+.chk--fail .chk__detail,
+.chk--warn .chk__detail {
+  color: var(--ink);
+  font-weight: 560;
+}
+.chk__ms {
+  font-size: 13.5px;
+  color: var(--ink-2);
+  text-align: right;
+}
+.chk__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.chk__status .ovp {
+  width: 11px;
+  height: 11px;
+  flex: none;
+}
+
+.pc__note {
+  margin: clamp(28px, 4vw, 48px) var(--pad) 0;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+
+@media (max-width: 1100px) {
+  .pc__jobs {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .pc__head {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .pc__run {
+    justify-items: start;
+  }
+  .pc__jobs {
+    padding: 0 16px;
+  }
+  .pc__tally,
+  .pc__head {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .job__head {
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 16px;
+  }
+  .job__no {
+    display: none;
+  }
+  .job__checks {
+    padding: 2px 16px 6px;
+  }
+  .chk {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .chk__label {
+    grid-area: 1 / 1;
+  }
+  .chk__status {
+    grid-area: 1 / 2;
+    justify-self: end;
+  }
+  .chk__detail {
+    grid-area: 2 / 1;
+  }
+  .chk__ms {
+    grid-area: 2 / 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pc__pulling i {
+    animation: none;
+  }
+}
